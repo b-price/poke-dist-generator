@@ -1,0 +1,145 @@
+import * as React from "react";
+import {useState} from "react";
+import {Button, Col, Container, Form, Row} from "react-bootstrap";
+import {MonFilter} from "./PokemonGenerator.tsx";
+
+interface PokeGenFiltersProps {
+    onSubmit: (filter?: MonFilter) => void;
+    setError: (errorMessage: string) => void;
+    resetError: () => void;
+}
+
+const initGens = [true, true, true, true, true, true, true, true, true]
+
+export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setError, resetError}) => {
+    const [filtered, setFiltered] = useState<boolean>(false);
+    //const [list, setList] = useState<number[]>([]);
+    const [noLegends, setNoLegends] = useState<boolean>(false);
+    const [noBeasts, setNoBeasts] = useState<boolean>(false);
+    const [noParadox, setNoParadox] = useState<boolean>(false);
+    const [gens, setGens] = useState<boolean[]>(initGens);
+    const [file, setFile] = useState<File | null>(null);
+
+    const changeGens = (checked: boolean, idx: number) => {
+        setGens(gens.map((v, i) => i === idx ? checked : v));
+    }
+
+    const initState = () => {
+        setFiltered(false);
+        setNoLegends(false);
+        setNoBeasts(false);
+        setNoParadox(false);
+        setGens(initGens);
+        setFile(null);
+    }
+
+    const submit = async () => {
+        try {
+            if (!filtered) {
+                onSubmit();
+            } else {
+                let list = null;
+                if (!gens.includes(true)){
+                    throw new Error("Select at least one generation!")
+                }
+                if (file) {
+                    const txt = await file.text();
+                    let strList = txt.split(',');
+                    strList = strList.map(s => s.trim());
+                    list = strList.map(p => parseFloat(p));
+                }
+                const filter: MonFilter = {
+                    noLegends,
+                    noBeasts,
+                    noParadox,
+                    gens: gens.map((_, i) => i + 1).filter((_, j) => gens[j]),
+                }
+                if (list) filter.numbers = list;
+                initState();
+                resetError();
+                onSubmit(filter);
+            }
+        } catch (e) {
+            console.log(e);
+            setError(e.toString());
+        }
+    }
+
+    const selectAllGens = (checked: boolean) => {
+        setGens(gens.map(() => checked));
+    }
+
+    return (
+        <Container>
+            {!filtered ? (
+                <>
+                    <Button variant="secondary" className="me-2" onClick={() => setFiltered(true)}>Filter</Button>
+                    <Button variant="primary" onClick={submit}>Generate</Button>
+                </>
+            ) : (
+                <Form>
+                    <Row className="mb-2"><h4>Filters</h4></Row>
+                    <Row className="align-items-center mb-3">
+                        <Col>
+                            <Form.Check
+                                type="switch"
+                                id="legendSwitch"
+                                label="No Legendaries"
+                                onChange={(e) => {setNoLegends(e.target.checked)}}
+                            />
+                        </Col>
+                        <Col>
+                            <Form.Check
+                                type="switch"
+                                id="beastsSwitch"
+                                label="No Ultra Beasts"
+                                onChange={(e) => {setNoBeasts(e.target.checked)}}
+                            />
+                        </Col>
+                        <Col>
+                            <Form.Check
+                                type="switch"
+                                id="paradoxSwitch"
+                                label="No Paradoxes"
+                                onChange={(e) => {setNoParadox(e.target.checked)}}
+                            />
+                        </Col>
+                    </Row>
+                    <Row className="align-items-baseline mb-2">
+                        <Col xs="auto">
+                            <Form.Label>Include Generation(s):</Form.Label>
+                        </Col>
+                        <Col xs="auto">
+                            <Button variant="outline-primary" onClick={() => selectAllGens(true)} size="sm">All</Button>
+                        </Col>
+                        <Col xs="auto">
+                            <Button variant="outline-secondary" onClick={() => selectAllGens(false)} size="sm">None</Button>
+                        </Col>
+                    </Row>
+                    <Row className="mb-2">
+                        {gens.map((g, i) => (
+                            <Col key={i}>
+                                <Form.Check
+                                    type="checkbox"
+                                    label={i + 1}
+                                    onChange={(e) => changeGens(e.target.checked, i)}
+                                    checked={g}
+                                />
+                            </Col>
+                        ) )}
+                    </Row>
+                    <Row className="mb-3">
+
+                    </Row>
+                    <Row className="mb-3">
+                        <Form.Group>
+                            <Form.Label>Upload List of Pokémon <small>.txt, comma-separated numbers only</small></Form.Label>
+                            <Form.Control type="file" accept=".txt" onChange={(e) => setFile(e.target.files[0])} />
+                        </Form.Group>
+                    </Row>
+                    <Button variant="primary" onClick={submit}>Generate</Button>
+                </Form>
+            )}
+        </Container>
+    )
+}
