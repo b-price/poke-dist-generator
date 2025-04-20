@@ -1,7 +1,7 @@
 import * as React from "react";
 import {useState} from "react";
 import {Button, Col, Container, Form, Row} from "react-bootstrap";
-import {MonFilter} from "./PokemonGenerator.tsx";
+import {MonFilter} from "../types.ts";
 
 interface PokeGenFiltersProps {
     onSubmit: (filter?: MonFilter) => void;
@@ -13,15 +13,14 @@ const initGens = [true, true, true, true, true, true, true, true, true]
 
 export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setError, resetError}) => {
     const [filtered, setFiltered] = useState<boolean>(false);
-    //const [list, setList] = useState<number[]>([]);
     const [noLegends, setNoLegends] = useState<boolean>(false);
     const [noBeasts, setNoBeasts] = useState<boolean>(false);
     const [noParadox, setNoParadox] = useState<boolean>(false);
-    const [gens, setGens] = useState<boolean[]>(initGens);
+    const [selectedGens, setSelectedGens] = useState<boolean[]>(initGens);
     const [file, setFile] = useState<File | null>(null);
 
     const changeGens = (checked: boolean, idx: number) => {
-        setGens(gens.map((v, i) => i === idx ? checked : v));
+        setSelectedGens(selectedGens.map((v, i) => i === idx ? checked : v));
     }
 
     const initState = () => {
@@ -29,7 +28,7 @@ export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setErro
         setNoLegends(false);
         setNoBeasts(false);
         setNoParadox(false);
-        setGens(initGens);
+        setSelectedGens(initGens);
         setFile(null);
     }
 
@@ -39,7 +38,7 @@ export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setErro
                 onSubmit();
             } else {
                 let list = null;
-                if (!gens.includes(true)){
+                if (!selectedGens.includes(true)){
                     throw new Error("Select at least one generation!")
                 }
                 if (file) {
@@ -52,7 +51,7 @@ export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setErro
                     noLegends,
                     noBeasts,
                     noParadox,
-                    gens: gens.map((_, i) => i + 1).filter((_, j) => gens[j]),
+                    gens: selectedGens.map((_, i) => i + 1).filter((_, j) => selectedGens[j]),
                 }
                 if (list) filter.numbers = list;
                 initState();
@@ -66,7 +65,7 @@ export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setErro
     }
 
     const selectAllGens = (checked: boolean) => {
-        setGens(gens.map(() => checked));
+        setSelectedGens(selectedGens.map(() => checked));
     }
 
     return (
@@ -117,7 +116,7 @@ export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setErro
                         </Col>
                     </Row>
                     <Row className="mb-2">
-                        {gens.map((g, i) => (
+                        {selectedGens.map((g, i) => (
                             <Col key={i}>
                                 <Form.Check
                                     type="checkbox"

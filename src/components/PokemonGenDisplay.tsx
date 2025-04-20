@@ -1,8 +1,9 @@
-import {PokeData} from "./PokemonGenerator.tsx";
 import * as React from "react";
 import {useEffect, useState} from "react";
 import {Button, Col, Container, Dropdown, DropdownButton, Row} from "react-bootstrap";
 import { CSVLink } from "react-csv";
+import {PokeData, PokeDataCSV} from "../types.ts";
+import {getIV} from "../utils/calc.ts";
 
 interface PokemonGenDisplayProps {
     data: PokeData[][];
@@ -11,15 +12,6 @@ interface PokemonGenDisplayProps {
     onRecalc: () => void;
     setError: (errorMessage: string) => void;
     resetError: () => void;
-}
-
-interface PokeDataCSV {
-    beforeBadge: number;
-    name: string;
-    level?: number;
-    bst: number;
-    baseExp: number;
-    dexNum: number;
 }
 
 export const PokemonGenDisplay: React.FC<PokemonGenDisplayProps> = ({ data, onRecalc, maxLevel, minLevel, setError, resetError }) => {
@@ -46,11 +38,6 @@ export const PokemonGenDisplay: React.FC<PokemonGenDisplayProps> = ({ data, onRe
         return sanitized;
     }
 
-    const getIV = (level: number) => {
-        const iv = Math.round(31 * (level - minLevel) / (maxLevel - minLevel));
-        return iv < 0 ? 0 : iv > 31 ? 31 : iv;
-    }
-
     const getShowdown = (ivs: string) => {
         let txt = ``;
         data.forEach((s, i) => {
@@ -61,7 +48,7 @@ export const PokemonGenDisplay: React.FC<PokemonGenDisplayProps> = ({ data, onRe
                 } else {
                     let iv = ivs === "31" ? 31 : 0;
                     if (ivs === "calc") {
-                        iv = getIV(p.level || minLevel);
+                        iv = getIV(p.level || minLevel, maxLevel, minLevel);
                     }
                     txt += `${p.name}\nLevel: ${p.level}\nIVs: ${iv} HP / ${iv} Atk / ${iv} Def / ${iv} SpA / ${iv} SpD / ${iv} Spd\n\n`
                 }

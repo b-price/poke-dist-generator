@@ -1,6 +1,8 @@
 import {Button, Col, Modal, Row} from "react-bootstrap";
-import {SplitData} from "./App.tsx";
 import { CSVLink } from "react-csv";
+import {SplitData} from "../types.ts";
+import React from "react";
+import {pokemonText} from "../constants.ts";
 
 interface OutputProps {
     totalExp: number;
@@ -24,7 +26,7 @@ export const Output: React.FC<OutputProps> = ({totalExp, splits, show, onClose, 
                     <>
                         <Row><h5>Before {i !== splits.length - 1 ? `Badge ${s.position}` : 'League'}:</h5></Row>
                         <Row className="mb-1">
-                            <Col>{s.monAmount} Pokémon</Col>
+                            <Col>{s.monAmount} {pokemonText}</Col>
                             <Col>{Math.round(s.totalExp).toLocaleString()} Total Exp.</Col>
                         </Row>
 
@@ -50,6 +52,5 @@ export const Output: React.FC<OutputProps> = ({totalExp, splits, show, onClose, 
                 <Button variant="secondary" onClick={onClose}>Close</Button>
             </Modal.Footer>
         </Modal>
-
     )
 }
