@@ -39,11 +39,11 @@ function App() {
     const [useChampion, setUseChampion] = useState<boolean>(false);
     const [errorState, setErrorState] = useState<boolean>(false);
     const [errors, setErrors] = useState<string[]>(['']);
-    const [showModal, setShowModal] = useState<boolean>(false);
+    const [showOutput, setShowOutput] = useState<boolean>(false);
     const [showGenerator, setShowGenerator] = useState<boolean>(false);
     const [results, setResults] = useState<SplitData[]>([]);
     const [totalExp, setTotalExp] = useState<number>(0);
-    const [maxLevel, setMaxLevel] = useState<number>(65);
+    const [maxLevel, setMaxLevel] = useState<number>(60);
     const [dark, setDark] = useState<boolean>(false);
 
     const bstLabels = ['', 'x', 'x²', 'x³', 'x⁴'];
@@ -131,28 +131,8 @@ function App() {
         return isError;
     }
 
-    // const getCurrentTeamSize = (gym: number) => {
-    //     return gym >= gymAces.length ? teamSize : Math.ceil((gym / gymAces.length) * teamSize);
-    // }
-
-    // const getCurrentBST = (progress: number) => {
-    //     let bst = 0;
-    //     bstCoefficients.forEach((b, i) => {
-    //         bst += b * Math.pow(progress, i);
-    //     })
-    //     return bst;
-    // }
-    //
-    // const getXPYield = (level: number, bxp: number) => {
-    //     return 1.5 * (level * bxp) / 7;
-    // }
-    //
-    // const getSimulatedBaseExp = (bst: number) => {
-    //     return 0.000514205 * Math.pow(bst, 2.07129);
-    // }
-
     const onGenerateMon = () => {
-        setShowModal(false);
+        setShowOutput(false);
         setShowGenerator(true);
     }
 
@@ -162,35 +142,8 @@ function App() {
             const finalTrainer = getFinalTrainer(useChampion, e4Aces);
             const adjFinalLevel = getFinalLevel(finalTrainer, teamStrength);
             setMaxLevel(Math.round(adjFinalLevel));
-            //const totalExp = getTotalExp(teamSize, adjFinalLevel, trainerPercent, expGrowthFunction);
             setTotalExp(getTotalExp(teamSize, adjFinalLevel, trainerPercent, expGrowthFunction));
             const aces = [...gymAces, finalTrainer];
-
-            // const flags: number[] = [];
-            // const xpTotalAtAces = aces.map((l, i) => {
-            //     const adjLevel = l * (teamStrength / 100);
-            //     const xp = getCurrentTeamSize(i + 1) * Math.pow(adjLevel, 3);
-            //     return xp * ((100 - trainerPercent) / trainerPercent + 1);
-            // })
-            // const xpAtAces = xpTotalAtAces.map((x, i) => {
-            //     const prevXP = i === 0 ? 0 : xpTotalAtAces[i - 1];
-            //     if (x - prevXP <= 0) {
-            //         flags.push(i)
-            //     }
-            //     return x - prevXP;
-            // })
-            //
-            // if (flags.length > 0) {
-            //
-            //     flags.forEach((f) => {
-            //         if (f > 0) {
-            //             const split = xpAtAces[f - 1] / 2;
-            //             xpAtAces[f] = split;
-            //             xpAtAces[f - 1] = split;
-            //         }
-            //     })
-            // }
-
             const xpAtAces = getExpAtAces(aces, teamStrength, trainerPercent, teamSize, gymAces.length, expGrowthFunction);
 
             const splitInfo: SplitData[] = [];
@@ -221,7 +174,7 @@ function App() {
             })
 
             setResults(splitInfo);
-            setShowModal(true);
+            setShowOutput(true);
         }
     }
 
@@ -231,7 +184,7 @@ function App() {
     }
 
   return (
-      <Container className="mx-5 mt-5">
+      <Container className="mx-4 my-5">
 
           <Row className="mb-3 align-items-center justify-content-between">
               <Col><h2>{title}</h2></Col>
@@ -266,7 +219,7 @@ function App() {
                       <FloatingLabel
                           controlId={`levelCurve${i}`}
                           label={`Ace #${i+1}`}
-                          className=""
+                          className="mb-3"
                       >
                           <Form.Control
                               value={a}
@@ -277,14 +230,18 @@ function App() {
                   </Col>
                 )
               )}
-              <Col>
-                  <Row className="align-items-center">
-                      <Button as={Col} xs={2} variant="outline-success" className="mx-2" onClick={addGymField}>
-                          <FontAwesomeIcon icon={faPlus} />
-                      </Button>
-                      <Button as={Col} xs={2} variant="outline-danger" className="" onClick={removeGymField}>
-                          <FontAwesomeIcon icon={faMinus} />
-                      </Button>
+              <Col xs="auto">
+                  <Row>
+                      <Col xs="auto">
+                          <Button variant="outline-success" className="mx-1 py-2 px-3" onClick={addGymField}>
+                              <FontAwesomeIcon icon={faPlus} />
+                          </Button>
+                      </Col>
+                      <Col xs="auto">
+                          <Button variant="outline-danger" className="py-2 px-3" onClick={removeGymField}>
+                              <FontAwesomeIcon icon={faMinus} />
+                          </Button>
+                      </Col>
                   </Row>
               </Col>
           </Form.Group>
@@ -294,7 +251,7 @@ function App() {
           </Row>
           <Form.Group as={Row} className="mb-3 align-items-center" controlId="e4Aces">
               {e4Aces.map((a, i) => (
-                      <Col lg="1" key={i}>
+                      <Col xs="auto" lg={1} key={i}>
                           <FloatingLabel
                               controlId={`levelCurve${i}`}
                               label={`Ace #${i+1}`}
@@ -309,14 +266,19 @@ function App() {
                       </Col>
                   )
               )}
-              <Col>
-                  <Row className="align-items-center">
-                      <Button as={Col} xs={1} variant="outline-success" className="mx-2" onClick={addE4Field}>
-                          <FontAwesomeIcon icon={faPlus} />
-                      </Button>
-                      <Button as={Col} xs={1} variant="outline-danger" className="" onClick={removeE4Field}>
-                          <FontAwesomeIcon icon={faMinus} />
-                      </Button>
+              <Col xs="auto">
+                  <Row>
+                      <Col xs="auto">
+                          <Button variant="outline-success" className="mx-1 py-2 px-3" onClick={addE4Field}>
+                              <FontAwesomeIcon icon={faPlus} />
+                          </Button>
+                      </Col>
+                      <Col xs="auto">
+                          <Button variant="outline-danger" className="py-2 px-3" onClick={removeE4Field}>
+                              <FontAwesomeIcon icon={faMinus} />
+                          </Button>
+                      </Col>
+
                   </Row>
               </Col>
           </Form.Group>
@@ -343,7 +305,7 @@ function App() {
                               <Form.Label>+</Form.Label>
                           </Col>
                       )}
-                      <Col >
+                      <Col lg={2} xs="auto" className="mb-3">
                           <InputGroup>
                               <Form.Control
                                   value={bst}
@@ -375,7 +337,7 @@ function App() {
           </Row>
 
           <Row className="mb-3 align-items-center">
-              <Form.Group as={Col} xs="auto" controlId="startingLevel">
+              <Form.Group as={Col} xs="auto" controlId="startingLevel" className="mb-3">
                   <Form.Label>First Battle Level</Form.Label>
                   <Form.Control type="number" value={firstAce} onChange={(e) => setFirstAce(parseFloat(e.target.value))} />
               </Form.Group>
@@ -400,10 +362,10 @@ function App() {
           </Alert>
 
           <Output
-              show={showModal}
+              show={showOutput}
               splits={results}
               totalExp={totalExp}
-              onClose={() => setShowModal(false)}
+              onClose={() => setShowOutput(false)}
               nextStep={onGenerateMon}
           />
           <PokemonGenerator

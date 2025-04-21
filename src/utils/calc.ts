@@ -1,4 +1,4 @@
-import {MonFilter, PokeData, SplitData} from "../types.ts";
+import {GrowthRates, MonFilter, PokeData, SplitData} from "../types.ts";
 import {beasts, gens, legends, paradox} from "../constants.ts";
 
 export const getCurrentTeamSize = (gym: number, gymAces: number, teamSize: number) => {
@@ -29,8 +29,8 @@ export const getFinalLevel = (finalTrainer: number, teamStrength: number) => {
     return finalTrainer * (teamStrength / 100);
 }
 
-export const getTotalExp = (teamSize: number, finalLevel: number, trainerPercent: number, expYieldFunction: (level: number) => number) => {
-    return (teamSize * expYieldFunction(finalLevel)) * ((100 - trainerPercent) / trainerPercent + 1);
+export const getTotalExp = (teamSize: number, finalLevel: number, trainerPercent: number, expYieldFunction: GrowthRates) => {
+    return (teamSize * getExp(expYieldFunction, finalLevel)) * ((100 - trainerPercent) / trainerPercent + 1);
 }
 
 export const getExpAtAces = (
@@ -39,13 +39,13 @@ export const getExpAtAces = (
     trainerPercent: number,
     teamSize: number,
     gymAmount: number,
-    expYieldFunction: (level: number) => number
+    expYieldFunction: GrowthRates
 ) => {
     const flags: number[] = [];
     
     const xpTotalAtAces = aces.map((l, i) => {
         const adjLevel = l * (teamStrength / 100);
-        const xp = getCurrentTeamSize(i + 1, gymAmount, teamSize) * expYieldFunction(adjLevel);
+        const xp = getCurrentTeamSize(i + 1, gymAmount, teamSize) * getExp(expYieldFunction, adjLevel);
         return xp * ((100 - trainerPercent) / trainerPercent + 1);
     })
     
@@ -82,7 +82,6 @@ export const range = (start: number, stop: number, step: number = 1) =>
     );
 
 export const filterMons = (pokemon: PokeData[], monFilter: MonFilter) => {
-
         let filteredMons = pokemon;
         if (monFilter) {
             let filtered: number[] = [];
@@ -107,13 +106,10 @@ export const filterMons = (pokemon: PokeData[], monFilter: MonFilter) => {
                     && !filtered.includes(mon.number));
             }
         }
-
         if (filteredMons.length < 1) {
             throw new Error("Filter resulted in no valid Pokémon!")
         }
-
         return filteredMons;
-
 }
 
 export const generateMons = (filteredMons: PokeData[], splits: SplitData[]) => {
@@ -134,4 +130,59 @@ export const generateMons = (filteredMons: PokeData[], splits: SplitData[]) => {
 export const getIV = (level: number, minLevel: number, maxLevel: number) => {
     const iv = Math.round(31 * (level - minLevel) / (maxLevel - minLevel));
     return iv < 0 ? 0 : iv > 31 ? 31 : iv;
+}
+
+export const getExp = (growthRate: GrowthRates, level: number) => {
+    switch (growthRate) {
+        case 'erratic':
+            return erratic(level);
+        case 'fast':
+            return fast(level);
+        case "mediumFast":
+            return mediumFast(level);
+        case "mediumSlow":
+            return mediumSlow(level);
+        case "slow":
+            return slow(level);
+        case "fluctuating":
+            return fluctuating(level);
+        default:
+            return mediumFast(level);
+    }
+}
+
+export const erratic = (level: number) => {
+    if (level < 50)
+        return (Math.pow(level, 3) * (100 - level)) / 50;
+    else if (level >= 50 && level < 68)
+        return (Math.pow(level, 3) * (150 - level)) / 50;
+    else if (level >= 68 && level < 98)
+        return (Math.pow(level, 3) * Math.floor((1911 - 10 * level) / 3)) / 500;
+    else
+        return (Math.pow(level, 3) * (160 - level)) / 100;
+}
+
+export const fast = (level: number) => {
+    return (4 * Math.pow(level, 3)) / 5;
+}
+
+export const mediumFast = (level: number) => {
+    return Math.pow(level, 3);
+}
+
+export const mediumSlow = (level: number) => {
+    return (6 / 5) * Math.pow(level, 3) - 15 * Math.pow(level, 2) + 100 * level - 140;
+}
+
+export const slow = (level: number) => {
+    return (5 * Math.pow(level, 3)) / 4;
+}
+
+export const fluctuating = (level: number) => {
+    if (level < 15)
+        return (Math.pow(level, 3) * (Math.floor((level + 1) / 3) + 24)) / 50;
+    else if (level >= 15 && level < 36)
+        return (Math.pow(level, 3) * (level + 14)) / 50;
+    else
+        return (Math.pow(level, 3) * (Math.floor(level / 2) + 32)) / 50;
 }

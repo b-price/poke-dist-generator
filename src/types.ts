@@ -36,3 +36,5 @@ export interface PokeDataCSV {
     baseExp: number;
     dexNum: number;
 }
+
+export type GrowthRates = 'erratic' | 'fast' | 'mediumFast' | 'mediumSlow' | 'slow' | 'fluctuating';
