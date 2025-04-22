@@ -1,25 +1,38 @@
 import Chart from 'react-apexcharts'
 import React, {useEffect, useState} from "react";
 import {MedianData, RangeData} from "../types.ts";
-import {chartResolution, highestBST, lowestBST} from "../constants.ts";
+import {chartResolution, highestBST} from "../constants.ts";
 
 interface RangeChartProps {
-    medianData: MedianData[];
-    rangeData: RangeData[];
+    bstMedianData: MedianData[];
+    bstRangeData: RangeData[];
+    levelMedianData: MedianData[];
+    levelRangeData: RangeData[];
+    theme: 'dark' | 'light';
 }
 
-const RangeChart: React.FC<RangeChartProps> = ({medianData, rangeData}) => {
+const RangeChart: React.FC<RangeChartProps> = ({bstMedianData, bstRangeData, levelMedianData, levelRangeData, theme}) => {
     const [state, setState] = useState({
         series: [
             {
+                type: 'line',
+                name: 'Ace Level',
+                data: levelMedianData,
+            },
+            {
                 type: 'rangeArea',
-                name: 'BST Range',
-                data: rangeData,
+                name: 'Level Range',
+                data: levelRangeData,
             },
             {
                 type: 'line',
                 name: 'BST Median',
-                data: medianData,
+                data: bstMedianData,
+            },
+            {
+                type: 'rangeArea',
+                name: 'BST Range',
+                data: bstRangeData,
             },
         ],
         options: {
@@ -28,44 +41,92 @@ const RangeChart: React.FC<RangeChartProps> = ({medianData, rangeData}) => {
                 type: 'rangeArea',
                 animations: {
                     speed: 500
-                }
+                },
+                toolbar: {
+                    show: false,
+                },
+                zoom: {
+                    enabled: false,
+                },
+                background: 'transparent',
             },
-            colors: ['#d4526e', '#33b2df', '#d4526e', '#33b2df'],
+            colors: ['#d4526e', '#d4526e', '#33b2df', '#33b2df'],
             dataLabels: {
                 enabled: false
             },
             fill: {
-                opacity: [0.24, 1, 1, 1]
-            },
-            forecastDataPoints: {
-                count: 2
+                opacity: [1, 0.24, 1, 0.24]
             },
             stroke: {
                 curve: 'straight',
-                width: [0, 2, 2, 2]
+                width: [2, 0, 2, 0]
             },
             legend: {
                 show: true,
                 inverseOrder: true
-            },
-            title: {
-                text: 'BST Curve'
             },
             markers: {
                 hover: {
                     sizeOffset: 5
                 }
             },
+            tooltip: {
+                enabledOnSeries: [0, 2],
+                shared: true,
+                hideEmptySeries: false,
+            },
+            theme: {
+                mode: theme
+            },
             xaxis: {
                 min: 0,
                 max: chartResolution,
-                labels: {show: false}
+                labels: {show: false},
+                axisTicks: {show: false},
             },
-            yaxis: {
-                min: lowestBST,
-                max: highestBST,
-                decimalsInFloat: 0
-            }
+            yaxis: [
+                {
+                    seriesName: ['Level Range', 'Ace Level'],
+                    opposite: true,
+                    axisTicks: {
+                        show: true,
+                        color: '#d4526e'
+                    },
+                    axisBorder: {
+                        show: true,
+                        color: '#d4526e'
+                    },
+                    min: 0,
+                    max: 100,
+                    decimalsInFloat: 0,
+                    title: {
+                        text: "Level",
+                        style: {
+                            color: '#d4526e'
+                        }
+                    },
+                },
+                {
+                    seriesName: ['BST Range', 'BST Median'],
+                    min: 0,
+                    max: highestBST,
+                    decimalsInFloat: 0,
+                    axisTicks: {
+                        show: true,
+                        color: '#33b2df'
+                    },
+                    axisBorder: {
+                        show: true,
+                        color: '#33b2df'
+                    },
+                    title: {
+                        text: "BST",
+                        style: {
+                            color: '#33b2df'
+                        }
+                    },
+                }
+            ],
         },
     });
 
@@ -73,69 +134,37 @@ const RangeChart: React.FC<RangeChartProps> = ({medianData, rangeData}) => {
         setState({
             series: [
                 {
-                    type: 'rangeArea',
-                    name: 'BST Range',
-                    data: rangeData,
+                    type: 'line',
+                    name: 'Ace Level',
+                    data: levelMedianData,
                 },
-
+                {
+                    type: 'rangeArea',
+                    name: 'Level Range',
+                    data: levelRangeData,
+                },
                 {
                     type: 'line',
                     name: 'BST Median',
-                    data: medianData,
+                    data: bstMedianData,
+                },
+                {
+                    type: 'rangeArea',
+                    name: 'BST Range',
+                    data: bstRangeData,
                 },
             ],
             options: {
-                chart: {
-                    height: 350,
-                    type: 'rangeArea',
-                    animations: {
-                        speed: 500
-                    }
-                },
-                colors: ['#d4526e', '#33b2df'],
-                dataLabels: {
-                    enabled: false
-                },
-                fill: {
-                    opacity: [0.24, 1]
-                },
-                forecastDataPoints: {
-                    count: 2
-                },
-                stroke: {
-                    curve: 'straight',
-                    width: [0, 2]
-                },
-                legend: {
-                    show: true,
-                    inverseOrder: true
-                },
-                title: {
-                    text: 'BST Curve'
-                },
-                markers: {
-                    hover: {
-                        sizeOffset: 5
-                    }
-                },
-                xaxis: {
-                    min: 0,
-                    max: chartResolution,
-                    labels: {show: false}
-                },
-                yaxis: {
-                    min: lowestBST,
-                    max: highestBST,
-                    decimalsInFloat: 0
-                }
-            },
-
-
+                ...state.options,
+                theme: { mode: theme }
+            }
         });
+    }, [bstMedianData, bstRangeData, levelMedianData, levelRangeData, theme]);
 
-    }, [medianData, rangeData]);
 
-
+    if (!levelRangeData.length || !bstMedianData.length || !levelMedianData.length || !bstRangeData.length) {
+        return null;
+    }
     return (
         <div>
             <div id="chart">

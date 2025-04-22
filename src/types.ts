@@ -48,3 +48,8 @@ export interface MedianData {
     x: number;
     y: number;
 }
+
+export interface ChartData {
+    rangeData: RangeData[];
+    medianData: MedianData[];
+}
