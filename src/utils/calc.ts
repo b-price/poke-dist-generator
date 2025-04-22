@@ -1,8 +1,8 @@
-import {RangeData, GrowthRates, MonFilter, PokeData, SplitData, MedianData} from "../types.ts";
-import {beasts, gens, legends, paradox} from "../constants.ts";
+import {RangeData, GrowthRates, MonFilter, PokeData, SplitData, MedianData} from "../types";
+import {beasts, gens, highestBST, legends, lowestBST, paradox} from "../constants";
 
 export const getCurrentTeamSize = (gym: number, gymAces: number, teamSize: number) => {
-    return gym >= gymAces ? teamSize : Math.ceil((gym / gymAces) * teamSize);
+    return gym >= gymAces ? teamSize : gym <= 0 ? 1 : Math.ceil((gym / gymAces) * teamSize);
 }
 
 export const getCurrentBST = (progress: number, bstCoefficients: number[], factor: number = 1) => {
@@ -10,7 +10,8 @@ export const getCurrentBST = (progress: number, bstCoefficients: number[], facto
     bstCoefficients.forEach((b, i) => {
         bst += b * Math.pow(progress, i);
     })
-    return bst * factor;
+    const result = bst * factor;
+    return result > highestBST ? highestBST : result < lowestBST ? lowestBST : result;
 }
 
 export const getXPYield = (level: number, bxp: number) => {
@@ -89,12 +90,11 @@ export const filterMons = (pokemon: PokeData[], monFilter: MonFilter) => {
             if (monFilter.noBeasts) filtered = [...filtered, ...beasts];
             if (monFilter.noParadox) filtered = [...filtered, ...paradox];
             let included: number[] = [];
-            if (monFilter.gens) {
-                monFilter.gens.forEach(gen => {
-                    const genMons = range(gens[gen - 1] + 1, gens[gen] + 1);
-                    included = [...included, ...genMons];
-                })
-            }
+            const gensFilter = monFilter.gens ? monFilter.gens : [1,2,3,4,5,6,7,8,9];
+            gensFilter.forEach(gen => {
+                const genMons = range(gens[gen - 1] + 1, gens[gen] + 1);
+                included = [...included, ...genMons];
+            })
             if (monFilter.numbers) {
                 filteredMons = filteredMons.filter(mon =>
                     monFilter.numbers?.includes(mon.number)
@@ -117,10 +117,12 @@ export const generateMons = (filteredMons: PokeData[], splits: SplitData[]) => {
     splits.forEach((s) => {
         const pool = filteredMons.filter(p => p.bst > s.minBST && p.bst < s.maxBST);
         const selected: PokeData[] = [];
-        for (let j = 0; j < s.monAmount; j++) {
-            const poke = pool[getRandomIntInclusive(0, pool.length - 1)];
-            const level = Math.round((poke.bst / s.maxBST) * s.maxLevel);
-            selected.push({...poke, level: level });
+        if (pool.length > 0) {
+            for (let j = 0; j < s.monAmount; j++) {
+                const poke = pool[getRandomIntInclusive(0, pool.length - 1)];
+                const level = Math.round((poke.bst / s.maxBST) * s.maxLevel);
+                selected.push({...poke, level: level });
+            }
         }
         selectedMons.push(selected)
     })
@@ -205,17 +207,10 @@ export const getBSTRangeData = (coefficients: number[], xRange: number, minBSTRa
 export const getLevelRangeData = (aces: number[], minLevelRatio: number, maxLevelRatio: number, minLevel: number) => {
     const rangeData: RangeData[] = [];
     const medianData: MedianData[] = [];
-    //const dataPoints = range(0, 100);
     aces.forEach((y, i) => {
         const x = i * 100 / (aces.length - 1);
         medianData.push({ x, y });
         rangeData.push({ x, y: [i === 0 ? minLevel : aces[i - 1] * minLevelRatio, y * maxLevelRatio] });
     })
-    // dataPoints.forEach(x => {
-    //     const index = Math.floor(x / aces.length);
-    //     console.log(index)
-    //     medianData.push({ x, y: aces[index]});
-    //     rangeData.push({ x, y: [index === 0 ? minLevel : aces[index - 1] * minLevelRatio, aces[index] * maxLevelRatio]})
-    // })
     return {rangeData, medianData};
 }

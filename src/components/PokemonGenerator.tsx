@@ -46,47 +46,6 @@ export const PokemonGenerator: React.FC<PokemonGeneratorProps> = ({show, onClose
 
     const calculateMon = (monFilter?: MonFilter) => {
         try {
-            // let filteredMons = mons;
-            // if (monFilter) {
-            //     let filtered: number[] = [];
-            //     if (monFilter.noLegends) filtered = legends;
-            //     if (monFilter.noBeasts) filtered = [...filtered, ...beasts];
-            //     if (monFilter.noParadox) filtered = [...filtered, ...paradox];
-            //     let included: number[] = [];
-            //     if (monFilter.gens) {
-            //         monFilter.gens.forEach(gen => {
-            //             const genMons = range(gens[gen - 1] + 1, gens[gen] + 1);
-            //             included = [...included, ...genMons];
-            //         })
-            //     }
-            //     if (monFilter.numbers) {
-            //         filteredMons = filteredMons.filter(mon =>
-            //             monFilter.numbers?.includes(mon.number)
-            //             && included.includes(mon.number)
-            //             && !filtered.includes(mon.number));
-            //     } else {
-            //         filteredMons = filteredMons.filter(mon =>
-            //             included.includes(mon.number)
-            //             && !filtered.includes(mon.number));
-            //     }
-            // }
-            //
-            // if (filteredMons.length < 1) {
-            //     throw new Error("Filter resulted in no valid Pokémon!")
-            // }
-            //
-            // const selectedMons: PokeData[][] = [];
-            // splits.forEach((s) => {
-            //     const pool = filteredMons.filter(p => p.bst > s.minBST && p.bst < s.maxBST);
-            //     const selected: PokeData[] = [];
-            //     for (let j = 0; j < s.monAmount; j++) {
-            //         const poke = pool[getRandomIntInclusive(0, pool.length - 1)];
-            //         const level = Math.round((poke.bst / s.maxBST) * s.maxLevel);
-            //         selected.push({...poke, level: level });
-            //     }
-            //     selectedMons.push(selected)
-            // })
-
             const filteredMons = monFilter ? filterMons(mons, monFilter) : mons;
             setPokemon(generateMons(filteredMons, splits));
             setIsCalculated(true);

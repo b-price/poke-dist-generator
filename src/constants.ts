@@ -1,4 +1,4 @@
-import {GrowthRates} from "./types.ts";
+import {GrowthRates} from "./types";
 
 export const title = "Trainer Pokémon Distribution Generator";
 export const pokemonText = "Pokémon";
