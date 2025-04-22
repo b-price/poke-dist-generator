@@ -1,4 +1,4 @@
-import {GrowthRates, MonFilter, PokeData, SplitData} from "../types.ts";
+import {RangeData, GrowthRates, MonFilter, PokeData, SplitData, MedianData} from "../types.ts";
 import {beasts, gens, legends, paradox} from "../constants.ts";
 
 export const getCurrentTeamSize = (gym: number, gymAces: number, teamSize: number) => {
@@ -185,4 +185,19 @@ export const fluctuating = (level: number) => {
         return (Math.pow(level, 3) * (level + 14)) / 50;
     else
         return (Math.pow(level, 3) * (Math.floor(level / 2) + 32)) / 50;
+}
+
+export const getRangeData = (coefficients: number[], xRange: number, minBSTRatio: number, maxBSTRatio: number) => {
+    const rangeData: RangeData[] = [];
+    const medianData: MedianData[] = [];
+    const dataPoints = range(0, xRange);
+    dataPoints.forEach(x => {
+        const y = getCurrentBST(x / 100, coefficients);
+        medianData.push({ x, y });
+        rangeData.push({
+            x,
+            y: [y * minBSTRatio, y * maxBSTRatio]
+        })
+    })
+    return {rangeData, medianData};
 }

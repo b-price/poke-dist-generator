@@ -7,16 +7,25 @@ import {Output} from "./Output.tsx";
 import {PokemonGenerator} from "./PokemonGenerator.tsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMoon, faSun, faPlus, faMinus} from "@fortawesome/free-solid-svg-icons"
-import {bstMaxFactor, bstMinFactor, expGrowthFunction, maxPreGym, minPostGym, title} from "../constants.ts";
-import {SplitData} from "../types.ts";
+import {
+    bstMaxFactor,
+    bstMinFactor,
+    chartResolution,
+    expGrowthFunction,
+    maxPreGym,
+    minPostGym,
+    title
+} from "../constants.ts";
+import {MedianData, RangeData, SplitData} from "../types.ts";
 import {
     getCurrentBST,
     getExpAtAces,
     getFinalLevel,
-    getFinalTrainer,
+    getFinalTrainer, getRangeData,
     getSimulatedBaseExp,
     getTotalExp, getXPYield
 } from "../utils/calc.ts";
+import RangeChart from "./RangeChart.tsx";
 
 const defaultState = {
     gymAces: [10,15,20,25,30,35,40,45],
@@ -26,6 +35,7 @@ const defaultState = {
     teamStrength: 85,
     firstAce: 5,
     trainerPercent: 100,
+    dataPoints: getRangeData([245, 565, -1150, 900, 0], chartResolution, bstMinFactor, bstMaxFactor),
 }
 
 function App() {
@@ -45,6 +55,7 @@ function App() {
     const [totalExp, setTotalExp] = useState<number>(0);
     const [maxLevel, setMaxLevel] = useState<number>(60);
     const [dark, setDark] = useState<boolean>(false);
+    const [dataPoints, setDataPoints] = useState<{rangeData: RangeData[], medianData: MedianData[]}>(defaultState.dataPoints);
 
     const bstLabels = ['', 'x', 'x²', 'x³', 'x⁴'];
 
@@ -57,7 +68,10 @@ function App() {
     }
 
     const onCoeffChange = (coeff: number, idx: number) => {
-        setBstCoefficients(bstCoefficients.map((b, i) => i === idx ? coeff : b));
+        const newCoeffs = bstCoefficients.map((b, i) => i === idx ? coeff : b);
+        setBstCoefficients(newCoeffs);
+        //const newPoints = getRangeData(newCoeffs, chartResolution, bstMinFactor, bstMaxFactor);
+        setDataPoints(getRangeData(newCoeffs, chartResolution, bstMinFactor, bstMaxFactor));
     }
 
     const addGymField = () => {
@@ -319,6 +333,8 @@ function App() {
                   )
               ).reverse()}
           </Form.Group>
+
+          <RangeChart medianData={dataPoints.medianData} rangeData={dataPoints.rangeData} />
 
           <Row className="mb-3">
               <Form.Group as={Col} xs="auto" controlId="teamSize">
