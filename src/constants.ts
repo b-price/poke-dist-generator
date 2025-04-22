@@ -40,4 +40,13 @@ export const gens = [0, 151, 251, 386, 493, 649, 721, 905, 1025];
 // the growth rate used for experience calculation. currently Medium Fast, the most common group
 export const expGrowthFunction: GrowthRates = 'mediumFast';
 
+// amount of data points to use to chart the BST curve
+export const chartResolution = 100;
+
+// our lord Arceus
+export const highestBST = 720;
+
+// Wishiwashi
+export const lowestBST = 175;
+
 

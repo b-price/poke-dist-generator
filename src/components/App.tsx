@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Alert, Button, Col, Container, FloatingLabel, Form, InputGroup, Row} from "react-bootstrap";
 import lCurves from '../data/levelCurvePresets.json' with { type: 'json' };
@@ -7,16 +7,25 @@ import {Output} from "./Output.tsx";
 import {PokemonGenerator} from "./PokemonGenerator.tsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMoon, faSun, faPlus, faMinus} from "@fortawesome/free-solid-svg-icons"
-import {bstMaxFactor, bstMinFactor, expGrowthFunction, maxPreGym, minPostGym, title} from "../constants.ts";
-import {SplitData} from "../types.ts";
+import {
+    bstMaxFactor,
+    bstMinFactor,
+    chartResolution,
+    expGrowthFunction,
+    maxPreGym,
+    minPostGym,
+    title
+} from "../constants.ts";
+import {ChartData, SplitData} from "../types.ts";
 import {
     getCurrentBST,
     getExpAtAces,
     getFinalLevel,
-    getFinalTrainer,
+    getFinalTrainer, getBSTRangeData,
     getSimulatedBaseExp,
-    getTotalExp, getXPYield
+    getTotalExp, getXPYield, getLevelRangeData
 } from "../utils/calc.ts";
+import RangeChart from "./RangeChart.tsx";
 
 const defaultState = {
     gymAces: [10,15,20,25,30,35,40,45],
@@ -26,6 +35,8 @@ const defaultState = {
     teamStrength: 85,
     firstAce: 5,
     trainerPercent: 100,
+    bstDataPoints: getBSTRangeData([245, 565, -1150, 900, 0], chartResolution, bstMinFactor, bstMaxFactor),
+    levelDataPoints: getLevelRangeData([10,15,20,25,30,35,40,45,50], minPostGym, maxPreGym, 5)
 }
 
 function App() {
@@ -45,11 +56,23 @@ function App() {
     const [totalExp, setTotalExp] = useState<number>(0);
     const [maxLevel, setMaxLevel] = useState<number>(60);
     const [dark, setDark] = useState<boolean>(false);
+    const [bstChartData, setBstChartData] = useState<ChartData>(defaultState.bstDataPoints);
+    const [levelChartData, setLevelChartData] = useState<ChartData>(defaultState.levelDataPoints);
 
     const bstLabels = ['', 'x', 'x²', 'x³', 'x⁴'];
 
+    useEffect(() => {
+        const leagueAce = useChampion ? e4Aces[e4Aces.length - 1] : e4Aces[0];
+        setLevelChartData(getLevelRangeData([...gymAces, leagueAce], minPostGym, maxPreGym, firstAce));
+    }, [gymAces, e4Aces, useChampion, firstAce]);
+
+    useEffect(() => {
+        setBstChartData(getBSTRangeData(bstCoefficients, chartResolution, bstMinFactor, bstMaxFactor));
+    }, [bstCoefficients]);
+
     const onGymAceChange = (level: number, idx: number) => {
-        setGymAces(gymAces.map((l, i) => i === idx ? level : l));
+        const newGymAces = gymAces.map((l, i) => i === idx ? level : l);
+        setGymAces(newGymAces);
     }
 
     const onE4AceChange = (level: number, idx: number) => {
@@ -57,7 +80,8 @@ function App() {
     }
 
     const onCoeffChange = (coeff: number, idx: number) => {
-        setBstCoefficients(bstCoefficients.map((b, i) => i === idx ? coeff : b));
+        const newCoeffs = bstCoefficients.map((b, i) => i === idx ? coeff : b);
+        setBstCoefficients(newCoeffs);
     }
 
     const addGymField = () => {
@@ -65,7 +89,8 @@ function App() {
     }
 
     const removeGymField = () => {
-        setGymAces([...gymAces].slice(0, gymAces.length - 1));
+        const newGymAces = [...gymAces].slice(0, gymAces.length - 1);
+        setGymAces(newGymAces);
     }
 
     const addE4Field = () => {
@@ -79,7 +104,7 @@ function App() {
     const onLevelPresetChange = (idx: number) => {
         if (!isNaN(idx)) {
             setGymAces(lCurves[idx].gyms);
-            setE4Aces(lCurves[idx].league)
+            setE4Aces(lCurves[idx].league);
         }
     }
 
@@ -319,6 +344,14 @@ function App() {
                   )
               ).reverse()}
           </Form.Group>
+
+          <RangeChart
+              bstMedianData={bstChartData.medianData}
+              bstRangeData={bstChartData.rangeData}
+              levelRangeData={levelChartData.rangeData}
+              levelMedianData={levelChartData.medianData}
+              theme={dark ? 'dark' : 'light'}
+          />
 
           <Row className="mb-3">
               <Form.Group as={Col} xs="auto" controlId="teamSize">

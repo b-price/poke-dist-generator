@@ -38,3 +38,18 @@ export interface PokeDataCSV {
 }
 
 export type GrowthRates = 'erratic' | 'fast' | 'mediumFast' | 'mediumSlow' | 'slow' | 'fluctuating';
+
+export interface RangeData {
+    x: number;
+    y: [number, number];
+}
+
+export interface MedianData {
+    x: number;
+    y: number;
+}
+
+export interface ChartData {
+    rangeData: RangeData[];
+    medianData: MedianData[];
+}

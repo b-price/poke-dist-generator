@@ -1,4 +1,4 @@
-import {GrowthRates, MonFilter, PokeData, SplitData} from "../types.ts";
+import {RangeData, GrowthRates, MonFilter, PokeData, SplitData, MedianData} from "../types.ts";
 import {beasts, gens, legends, paradox} from "../constants.ts";
 
 export const getCurrentTeamSize = (gym: number, gymAces: number, teamSize: number) => {
@@ -185,4 +185,37 @@ export const fluctuating = (level: number) => {
         return (Math.pow(level, 3) * (level + 14)) / 50;
     else
         return (Math.pow(level, 3) * (Math.floor(level / 2) + 32)) / 50;
+}
+
+export const getBSTRangeData = (coefficients: number[], xRange: number, minBSTRatio: number, maxBSTRatio: number) => {
+    const rangeData: RangeData[] = [];
+    const medianData: MedianData[] = [];
+    const dataPoints = range(0, xRange + 1);
+    dataPoints.forEach(x => {
+        const y = getCurrentBST(x / 100, coefficients);
+        medianData.push({ x, y });
+        rangeData.push({
+            x,
+            y: [y * minBSTRatio, y * maxBSTRatio]
+        })
+    })
+    return {rangeData, medianData};
+}
+
+export const getLevelRangeData = (aces: number[], minLevelRatio: number, maxLevelRatio: number, minLevel: number) => {
+    const rangeData: RangeData[] = [];
+    const medianData: MedianData[] = [];
+    //const dataPoints = range(0, 100);
+    aces.forEach((y, i) => {
+        const x = i * 100 / (aces.length - 1);
+        medianData.push({ x, y });
+        rangeData.push({ x, y: [i === 0 ? minLevel : aces[i - 1] * minLevelRatio, y * maxLevelRatio] });
+    })
+    // dataPoints.forEach(x => {
+    //     const index = Math.floor(x / aces.length);
+    //     console.log(index)
+    //     medianData.push({ x, y: aces[index]});
+    //     rangeData.push({ x, y: [index === 0 ? minLevel : aces[index - 1] * minLevelRatio, aces[index] * maxLevelRatio]})
+    // })
+    return {rangeData, medianData};
 }
