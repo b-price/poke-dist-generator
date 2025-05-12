@@ -47,7 +47,11 @@ export const PokemonGenerator: React.FC<PokemonGeneratorProps> = ({show, onClose
     const calculateMon = (monFilter?: MonFilter) => {
         try {
             const filteredMons = monFilter ? filterMons(mons, monFilter) : mons;
-            setPokemon(generateMons(filteredMons, splits));
+            if (monFilter && monFilter.fullyEvolvedLevel && monFilter.fullyEvolvedLevel > 0) {
+                setPokemon(generateMons(filteredMons, splits, monFilter.fullyEvolvedLevel));
+            } else {
+                setPokemon(generateMons(filteredMons, splits));
+            }
             setIsCalculated(true);
             resetError();
         } catch (e) {

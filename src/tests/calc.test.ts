@@ -272,7 +272,7 @@ describe("generateMons", () => {
                 minLevel: 5,
                 maxLevel: 10,
                 averageLevel: 7.5,
-                minBST: 500,
+                minBST: 550,
                 maxBST: 600,
                 averageBST: 550,
                 averageMonBaseExp: 60,
@@ -288,7 +288,7 @@ describe("generateMons", () => {
 
     it("should replace non-fully evolved Pokémon when level is at or above fullyEvolvedLevel", () => {
         // Set fullyEvolvedLevel to 25, which should affect the second split
-        const result = generateMons(filteredMons, splits, 25);
+        const result = generateMons(filteredMons, splits, 20);
 
         // First split should have normal Pokémon (levels 5-10)
         expect(result[0]).toHaveLength(2);

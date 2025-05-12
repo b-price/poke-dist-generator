@@ -118,20 +118,21 @@ export const generateMons = (filteredMons: PokeData[], splits: SplitData[], full
             for (let j = 0; j < s.monAmount; j++) {
                 let poke = pool[getRandomIntInclusive(0, pool.length - 1)];
                 const level = Math.round((poke.bst / s.maxBST) * s.maxLevel);
-
+                console.log(poke.name, level)
                 // Check if we need to replace non-fully evolved Pokémon
                 if (fullyEvolvedLevel && fullyEvolvedLevel > 0 && level >= fullyEvolvedLevel && !poke.fullyEvolved) {
                     // Try to find a fully evolved Pokémon with similar BST
                     const fullyEvolvedPool = pool.filter(p => p.fullyEvolved);
+                    //console.log(fullyEvolvedPool)
                     if (fullyEvolvedPool.length > 0) {
                         // Find a fully evolved Pokémon with the closest BST
                         const closestBST = fullyEvolvedPool.reduce((prev, curr) =>
                             Math.abs(curr.bst - poke.bst) < Math.abs(prev.bst - poke.bst) ? curr : prev
                         );
                         poke = closestBST;
+                        console.log("changed to ", poke.name)
                     }
                 }
-
                 selected.push({...poke, level: level });
             }
         }
