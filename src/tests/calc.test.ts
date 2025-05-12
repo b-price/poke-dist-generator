@@ -215,8 +215,11 @@ describe("filterMons", () => {
 describe("generateMons", () => {
     const filteredMons: PokeData[] = [
         { number: 1, name: "Bulbasaur", bst: 318, baseExp: 64 },
+        { number: 2, name: "Ivysaur", bst: 405, baseExp: 142 },
+        { number: 3, name: "Venusaur", bst: 525, baseExp: 263, fullyEvolved: true },
         { number: 4, name: "Charmander", bst: 309, baseExp: 62 },
-        { number: 7, name: "Squirtle", bst: 314, baseExp: 63 },
+        { number: 5, name: "Charmeleon", bst: 405, baseExp: 142 },
+        { number: 6, name: "Charizard", bst: 534, baseExp: 267, fullyEvolved: true },
     ];
 
     const splits: SplitData[] = [
@@ -233,15 +236,33 @@ describe("generateMons", () => {
             totalExp: 200,
             position: 0,
         },
+        {
+            minLevel: 20,
+            maxLevel: 30,
+            averageLevel: 25,
+            minBST: 400,
+            maxBST: 550,
+            averageBST: 475,
+            averageMonBaseExp: 150,
+            averageMonYield: 300,
+            monAmount: 2,
+            totalExp: 600,
+            position: 1,
+        },
     ];
 
     it("should generate Pokémon based on splits", () => {
         const result = generateMons(filteredMons, splits);
-        expect(result).toHaveLength(1);
+        expect(result).toHaveLength(2);
         expect(result[0]).toHaveLength(2);
+        expect(result[1]).toHaveLength(2);
         result[0].forEach((mon) => {
             expect(mon.level).toBeGreaterThanOrEqual(5);
             expect(mon.level).toBeLessThanOrEqual(10);
+        });
+        result[1].forEach((mon) => {
+            expect(mon.level).toBeGreaterThanOrEqual(20);
+            expect(mon.level).toBeLessThanOrEqual(30);
         });
     });
 
@@ -263,6 +284,31 @@ describe("generateMons", () => {
         ];
         const result = generateMons(filteredMons, emptySplits);
         expect(result).toEqual([[]]);
+    });
+
+    it("should replace non-fully evolved Pokémon when level is at or above fullyEvolvedLevel", () => {
+        // Set fullyEvolvedLevel to 25, which should affect the second split
+        const result = generateMons(filteredMons, splits, 25);
+
+        // First split should have normal Pokémon (levels 5-10)
+        expect(result[0]).toHaveLength(2);
+
+        // Second split should only have fully evolved Pokémon (levels 20-30)
+        expect(result[1]).toHaveLength(2);
+        result[1].forEach(mon => {
+            expect(mon.fullyEvolved).toBe(true);
+        });
+    });
+
+    it("should not replace Pokémon when fullyEvolvedLevel is 0 or undefined", () => {
+        // With fullyEvolvedLevel = 0
+        const result1 = generateMons(filteredMons, splits, 0);
+        // With fullyEvolvedLevel = undefined
+        const result2 = generateMons(filteredMons, splits);
+
+        // Both results should contain a mix of evolved and non-evolved Pokémon
+        expect(result1[1].every(mon => mon.fullyEvolved)).toBe(false);
+        expect(result2[1].every(mon => mon.fullyEvolved)).toBe(false);
     });
 });
 
