@@ -214,9 +214,10 @@ describe("filterMons", () => {
 
 describe("generateMons", () => {
     const filteredMons: PokeData[] = [
-        { number: 1, name: "Bulbasaur", bst: 318, baseExp: 64 },
-        { number: 4, name: "Charmander", bst: 309, baseExp: 62 },
-        { number: 7, name: "Squirtle", bst: 314, baseExp: 63 },
+        { number: 1, name: "Bulbasaur", bst: 318, baseExp: 64, fullyEvolved: false },
+        { number: 4, name: "Charmander", bst: 309, baseExp: 62, fullyEvolved: false },
+        { number: 7, name: "Squirtle", bst: 314, baseExp: 63, fullyEvolved: false },
+        { number: 3, name: "Venusaur", bst: 525, baseExp: 263, fullyEvolved: true }
     ];
 
     const splits: SplitData[] = [
@@ -263,6 +264,17 @@ describe("generateMons", () => {
         ];
         const result = generateMons(filteredMons, emptySplits);
         expect(result).toEqual([[]]);
+    });
+
+    it("should filter out non-fully evolved Pokémon if level >= fullyEvolvedLevel", () => {
+        const result = generateMons(filteredMons, splits, 8);
+        expect(result).toHaveLength(1);
+        expect(result[0]).toHaveLength(2);
+        result[0].forEach((mon) => {
+            if (mon.level >= 8) {
+                expect(mon.fullyEvolved).toBe(true);
+            }
+        });
     });
 });
 

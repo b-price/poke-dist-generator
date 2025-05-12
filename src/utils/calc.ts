@@ -116,15 +116,25 @@ export const generateMons = (filteredMons: PokeData[], splits: SplitData[], full
         const selected: PokeData[] = [];
         if (pool.length > 0) {
             for (let j = 0; j < s.monAmount; j++) {
-                const poke = pool[getRandomIntInclusive(0, pool.length - 1)];
-                const level = Math.round((poke.bst / s.maxBST) * s.maxLevel);
+                let poke = pool[getRandomIntInclusive(0, pool.length - 1)];
+                let level = Math.round((poke.bst / s.maxBST) * s.maxLevel);
+
+                // Check if fullyEvolvedLevel is defined and greater than 0
+                if (fullyEvolvedLevel && fullyEvolvedLevel > 0) {
+                    // If level is at or above fullyEvolvedLevel and Pokémon is not fully evolved, try to find another
+                    while (level >= fullyEvolvedLevel && !poke.fullyEvolved && pool.length > 1) {
+                        poke = pool[getRandomIntInclusive(0, pool.length - 1)];
+                        level = Math.round((poke.bst / s.maxBST) * s.maxLevel);
+                    }
+                }
+
                 selected.push({...poke, level: level });
             }
         }
         selectedMons.push(selected)
     })
     return selectedMons;
-}
+};
 
 export const getIV = (level: number, minLevel: number, maxLevel: number) => {
     const iv = Math.round(31 * (level - minLevel) / (maxLevel - minLevel));
