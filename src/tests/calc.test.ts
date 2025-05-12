@@ -3,7 +3,6 @@ import {
     getCurrentBST,
     getXPYield,
     getSimulatedBaseExp,
-    getFinalTrainer,
     getFinalLevel,
     getTotalExp,
     getExpAtAces,
@@ -14,7 +13,7 @@ import {
     getIV,
     getExp,
     getBSTRangeData,
-    getLevelRangeData,
+    getLevelRangeData, getMean,
 } from "../utils/calc";
 import { GrowthRates, MonFilter, PokeData, SplitData } from "../types";
 import {highestBST, lowestBST} from "../constants";
@@ -75,16 +74,6 @@ describe("getSimulatedBaseExp", () => {
 
     it("should handle edge case when BST = 0", () => {
         expect(getSimulatedBaseExp(0)).toBe(0);
-    });
-});
-
-describe("getFinalTrainer", () => {
-    it("should return last trainer if champion", () => {
-        expect(getFinalTrainer(true, [1, 2, 3])).toBe(3);
-    });
-
-    it("should return first trainer if not champion", () => {
-        expect(getFinalTrainer(false, [1, 2, 3])).toBe(1);
     });
 });
 
@@ -163,6 +152,7 @@ describe("filterMons", () => {
     const pokemon: PokeData[] = [
         { number: 1, name: "Bulbasaur", bst: 318, baseExp: 64 },
         { number: 144, name: "Articuno", bst: 580, baseExp: 261 },
+        { number: 194, name: "Wooper", bst: 210, baseExp: 42 },
         { number: 794, name: "Buzzwole", bst: 600, baseExp: 270 },
         { number: 1020, name: "Gouging Fire", bst: 590, baseExp: 295 },
     ];
@@ -171,6 +161,7 @@ describe("filterMons", () => {
         const monFilter: MonFilter = { noLegends: true };
         expect(filterMons(pokemon, monFilter)).toEqual([
             { number: 1, name: "Bulbasaur", bst: 318, baseExp: 64 },
+            { number: 194, name: "Wooper", bst: 210, baseExp: 42 },
             { number: 794, name: "Buzzwole", bst: 600, baseExp: 270 },
             { number: 1020, name: "Gouging Fire", bst: 590, baseExp: 295 },
         ]);
@@ -181,6 +172,7 @@ describe("filterMons", () => {
         expect(filterMons(pokemon, monFilter)).toEqual([
             { number: 1, name: "Bulbasaur", bst: 318, baseExp: 64 },
             { number: 144, name: "Articuno", bst: 580, baseExp: 261 },
+            { number: 194, name: "Wooper", bst: 210, baseExp: 42 },
             { number: 1020, name: "Gouging Fire", bst: 590, baseExp: 295 },
         ]);
     });
@@ -190,7 +182,18 @@ describe("filterMons", () => {
         expect(filterMons(pokemon, monFilter)).toEqual([
             { number: 1, name: "Bulbasaur", bst: 318, baseExp: 64 },
             { number: 144, name: "Articuno", bst: 580, baseExp: 261 },
+            { number: 194, name: "Wooper", bst: 210, baseExp: 42 },
             { number: 794, name: "Buzzwole", bst: 600, baseExp: 270 },
+        ]);
+    });
+
+    it("should filter out starter Pokémon", () => {
+        const monFilter: MonFilter = { noStarters: true };
+        expect(filterMons(pokemon, monFilter)).toEqual([
+            { number: 144, name: "Articuno", bst: 580, baseExp: 261 },
+            { number: 194, name: "Wooper", bst: 210, baseExp: 42 },
+            { number: 794, name: "Buzzwole", bst: 600, baseExp: 270 },
+            { number: 1020, name: "Gouging Fire", bst: 590, baseExp: 295 },
         ]);
     });
 
@@ -198,6 +201,7 @@ describe("filterMons", () => {
         const monFilter: MonFilter = { noLegends: true, noBeasts: true };
         expect(filterMons(pokemon, monFilter)).toEqual([
             { number: 1, name: "Bulbasaur", bst: 318, baseExp: 64 },
+            { number: 194, name: "Wooper", bst: 210, baseExp: 42 },
             { number: 1020, name: "Gouging Fire", bst: 590, baseExp: 295 },
         ]);
     });
@@ -348,3 +352,15 @@ describe("getLevelRangeData", () => {
         expect(resultEmpty.medianData).toHaveLength(0);
     });
 });
+
+describe("getMean", () => {
+    it("should caclulate average of given data", () => {
+        expect(getMean([1,2,3,4,5])).toBe(3);
+        expect(getMean([1])).toBe(1);
+        expect(getMean([-3, -7, 10, 23, 1, 30.2])).toBeCloseTo(9.03333);
+    })
+
+    it("should return 0 for empty array", () => {
+        expect(getMean([])).toBe(0);
+    })
+})

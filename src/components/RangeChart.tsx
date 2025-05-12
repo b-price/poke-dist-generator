@@ -36,6 +36,10 @@ const RangeChart: React.FC<RangeChartProps> = ({bstMedianData, bstRangeData, lev
             },
         ],
         options: {
+            title: {
+                text: "BST and Level Across Game",
+                align: "center"
+            },
             chart: {
                 height: 350,
                 type: 'rangeArea',

@@ -15,7 +15,8 @@
     "number": 3,
     "name": "Venusaur",
     "bst": 525,
-    "baseExp": 263
+    "baseExp": 263,
+    "fullyEvolved": true
   },
   {
     "number": 4,
@@ -33,7 +34,8 @@
     "number": 6,
     "name": "Charizard",
     "bst": 534,
-    "baseExp": 267
+    "baseExp": 267,
+    "fullyEvolved": true
   },
   {
     "number": 7,
@@ -51,7 +53,8 @@
     "number": 9,
     "name": "Blastoise",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 10,
@@ -69,7 +72,8 @@
     "number": 12,
     "name": "Butterfree",
     "bst": 395,
-    "baseExp": 198
+    "baseExp": 198,
+    "fullyEvolved": true
   },
   {
     "number": 13,
@@ -87,7 +91,8 @@
     "number": 15,
     "name": "Beedrill",
     "bst": 395,
-    "baseExp": 198
+    "baseExp": 198,
+    "fullyEvolved": true
   },
   {
     "number": 16,
@@ -105,7 +110,8 @@
     "number": 18,
     "name": "Pidgeot",
     "bst": 479,
-    "baseExp": 240
+    "baseExp": 240,
+    "fullyEvolved": true
   },
   {
     "number": 19,
@@ -117,7 +123,8 @@
     "number": 20,
     "name": "Raticate",
     "bst": 413,
-    "baseExp": 145
+    "baseExp": 145,
+    "fullyEvolved": true
   },
   {
     "number": 21,
@@ -129,7 +136,8 @@
     "number": 22,
     "name": "Fearow",
     "bst": 442,
-    "baseExp": 155
+    "baseExp": 155,
+    "fullyEvolved": true
   },
   {
     "number": 23,
@@ -141,7 +149,8 @@
     "number": 24,
     "name": "Arbok",
     "bst": 448,
-    "baseExp": 157
+    "baseExp": 157,
+    "fullyEvolved": true
   },
   {
     "number": 25,
@@ -153,7 +162,8 @@
     "number": 26,
     "name": "Raichu",
     "bst": 485,
-    "baseExp": 243
+    "baseExp": 243,
+    "fullyEvolved": true
   },
   {
     "number": 27,
@@ -165,7 +175,8 @@
     "number": 28,
     "name": "Sandslash",
     "bst": 450,
-    "baseExp": 158
+    "baseExp": 158,
+    "fullyEvolved": true
   },
   {
     "number": 29,
@@ -183,7 +194,8 @@
     "number": 31,
     "name": "Nidoqueen",
     "bst": 505,
-    "baseExp": 253
+    "baseExp": 253,
+    "fullyEvolved": true
   },
   {
     "number": 32,
@@ -201,7 +213,8 @@
     "number": 34,
     "name": "Nidoking",
     "bst": 505,
-    "baseExp": 253
+    "baseExp": 253,
+    "fullyEvolved": true
   },
   {
     "number": 35,
@@ -213,7 +226,8 @@
     "number": 36,
     "name": "Clefable",
     "bst": 483,
-    "baseExp": 242
+    "baseExp": 242,
+    "fullyEvolved": true
   },
   {
     "number": 37,
@@ -225,7 +239,8 @@
     "number": 38,
     "name": "Ninetales",
     "bst": 505,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 39,
@@ -237,7 +252,8 @@
     "number": 40,
     "name": "Wigglytuff",
     "bst": 435,
-    "baseExp": 218
+    "baseExp": 218,
+    "fullyEvolved": true
   },
   {
     "number": 41,
@@ -267,7 +283,8 @@
     "number": 45,
     "name": "Vileplume",
     "bst": 490,
-    "baseExp": 245
+    "baseExp": 245,
+    "fullyEvolved": true
   },
   {
     "number": 46,
@@ -279,7 +296,8 @@
     "number": 47,
     "name": "Parasect",
     "bst": 405,
-    "baseExp": 142
+    "baseExp": 142,
+    "fullyEvolved": true
   },
   {
     "number": 48,
@@ -291,7 +309,8 @@
     "number": 49,
     "name": "Venomoth",
     "bst": 450,
-    "baseExp": 158
+    "baseExp": 158,
+    "fullyEvolved": true
   },
   {
     "number": 50,
@@ -303,7 +322,8 @@
     "number": 51,
     "name": "Dugtrio",
     "bst": 425,
-    "baseExp": 149
+    "baseExp": 149,
+    "fullyEvolved": true
   },
   {
     "number": 52,
@@ -315,7 +335,8 @@
     "number": 53,
     "name": "Persian",
     "bst": 440,
-    "baseExp": 154
+    "baseExp": 154,
+    "fullyEvolved": true
   },
   {
     "number": 54,
@@ -327,7 +348,8 @@
     "number": 55,
     "name": "Golduck",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 56,
@@ -339,7 +361,8 @@
     "number": 57,
     "name": "Primeape",
     "bst": 455,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 58,
@@ -351,7 +374,8 @@
     "number": 59,
     "name": "Arcanine",
     "bst": 555,
-    "baseExp": 194
+    "baseExp": 194,
+    "fullyEvolved": true
   },
   {
     "number": 60,
@@ -369,7 +393,8 @@
     "number": 62,
     "name": "Poliwrath",
     "bst": 510,
-    "baseExp": 255
+    "baseExp": 255,
+    "fullyEvolved": true
   },
   {
     "number": 63,
@@ -387,7 +412,8 @@
     "number": 65,
     "name": "Alakazam",
     "bst": 500,
-    "baseExp": 250
+    "baseExp": 250,
+    "fullyEvolved": true
   },
   {
     "number": 66,
@@ -405,7 +431,8 @@
     "number": 68,
     "name": "Machamp",
     "bst": 505,
-    "baseExp": 253
+    "baseExp": 253,
+    "fullyEvolved": true
   },
   {
     "number": 69,
@@ -423,7 +450,8 @@
     "number": 71,
     "name": "Victreebel",
     "bst": 490,
-    "baseExp": 245
+    "baseExp": 245,
+    "fullyEvolved": true
   },
   {
     "number": 72,
@@ -435,7 +463,8 @@
     "number": 73,
     "name": "Tentacruel",
     "bst": 515,
-    "baseExp": 180
+    "baseExp": 180,
+    "fullyEvolved": true
   },
   {
     "number": 74,
@@ -453,7 +482,8 @@
     "number": 76,
     "name": "Golem",
     "bst": 495,
-    "baseExp": 248
+    "baseExp": 248,
+    "fullyEvolved": true
   },
   {
     "number": 77,
@@ -465,7 +495,8 @@
     "number": 78,
     "name": "Rapidash",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 79,
@@ -477,7 +508,8 @@
     "number": 80,
     "name": "Slowbro",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 81,
@@ -507,7 +539,8 @@
     "number": 85,
     "name": "Dodrio",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 86,
@@ -519,7 +552,8 @@
     "number": 87,
     "name": "Dewgong",
     "bst": 475,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 88,
@@ -531,7 +565,8 @@
     "number": 89,
     "name": "Muk",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 90,
@@ -543,7 +578,8 @@
     "number": 91,
     "name": "Cloyster",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 92,
@@ -561,7 +597,8 @@
     "number": 94,
     "name": "Gengar",
     "bst": 500,
-    "baseExp": 250
+    "baseExp": 250,
+    "fullyEvolved": true
   },
   {
     "number": 95,
@@ -579,7 +616,8 @@
     "number": 97,
     "name": "Hypno",
     "bst": 483,
-    "baseExp": 169
+    "baseExp": 169,
+    "fullyEvolved": true
   },
   {
     "number": 98,
@@ -591,7 +629,8 @@
     "number": 99,
     "name": "Kingler",
     "bst": 475,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 100,
@@ -603,7 +642,8 @@
     "number": 101,
     "name": "Electrode",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 102,
@@ -615,7 +655,8 @@
     "number": 103,
     "name": "Exeggutor",
     "bst": 530,
-    "baseExp": 186
+    "baseExp": 186,
+    "fullyEvolved": true
   },
   {
     "number": 104,
@@ -627,19 +668,22 @@
     "number": 105,
     "name": "Marowak",
     "bst": 425,
-    "baseExp": 149
+    "baseExp": 149,
+    "fullyEvolved": true
   },
   {
     "number": 106,
     "name": "Hitmonlee",
     "bst": 455,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 107,
     "name": "Hitmonchan",
     "bst": 455,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 108,
@@ -657,7 +701,8 @@
     "number": 110,
     "name": "Weezing",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 111,
@@ -687,7 +732,8 @@
     "number": 115,
     "name": "Kangaskhan",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 116,
@@ -711,7 +757,8 @@
     "number": 119,
     "name": "Seaking",
     "bst": 450,
-    "baseExp": 158
+    "baseExp": 158,
+    "fullyEvolved": true
   },
   {
     "number": 120,
@@ -723,7 +770,8 @@
     "number": 121,
     "name": "Starmie",
     "bst": 520,
-    "baseExp": 182
+    "baseExp": 182,
+    "fullyEvolved": true
   },
   {
     "number": 122,
@@ -741,7 +789,8 @@
     "number": 124,
     "name": "Jynx",
     "bst": 455,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 125,
@@ -759,13 +808,15 @@
     "number": 127,
     "name": "Pinsir",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 128,
     "name": "Tauros",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 129,
@@ -777,19 +828,22 @@
     "number": 130,
     "name": "Gyarados",
     "bst": 540,
-    "baseExp": 189
+    "baseExp": 189,
+    "fullyEvolved": true
   },
   {
     "number": 131,
     "name": "Lapras",
     "bst": 535,
-    "baseExp": 187
+    "baseExp": 187,
+    "fullyEvolved": true
   },
   {
     "number": 132,
     "name": "Ditto",
     "bst": 288,
-    "baseExp": 101
+    "baseExp": 101,
+    "fullyEvolved": true
   },
   {
     "number": 133,
@@ -801,19 +855,22 @@
     "number": 134,
     "name": "Vaporeon",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 135,
     "name": "Jolteon",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 136,
     "name": "Flareon",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 137,
@@ -831,7 +888,8 @@
     "number": 139,
     "name": "Omastar",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 140,
@@ -843,37 +901,43 @@
     "number": 141,
     "name": "Kabutops",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 142,
     "name": "Aerodactyl",
     "bst": 515,
-    "baseExp": 180
+    "baseExp": 180,
+    "fullyEvolved": true
   },
   {
     "number": 143,
     "name": "Snorlax",
     "bst": 540,
-    "baseExp": 189
+    "baseExp": 189,
+    "fullyEvolved": true
   },
   {
     "number": 144,
     "name": "Articuno",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 145,
     "name": "Zapdos",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 146,
     "name": "Moltres",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 147,
@@ -891,19 +955,22 @@
     "number": 149,
     "name": "Dragonite",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 150,
     "name": "Mewtwo",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 151,
     "name": "Mew",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 152,
@@ -921,7 +988,8 @@
     "number": 154,
     "name": "Meganium",
     "bst": 525,
-    "baseExp": 263
+    "baseExp": 263,
+    "fullyEvolved": true
   },
   {
     "number": 155,
@@ -939,7 +1007,8 @@
     "number": 157,
     "name": "Typhlosion",
     "bst": 534,
-    "baseExp": 267
+    "baseExp": 267,
+    "fullyEvolved": true
   },
   {
     "number": 158,
@@ -957,7 +1026,8 @@
     "number": 160,
     "name": "Feraligatr",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 161,
@@ -969,7 +1039,8 @@
     "number": 162,
     "name": "Furret",
     "bst": 415,
-    "baseExp": 145
+    "baseExp": 145,
+    "fullyEvolved": true
   },
   {
     "number": 163,
@@ -981,7 +1052,8 @@
     "number": 164,
     "name": "Noctowl",
     "bst": 452,
-    "baseExp": 158
+    "baseExp": 158,
+    "fullyEvolved": true
   },
   {
     "number": 165,
@@ -993,7 +1065,8 @@
     "number": 166,
     "name": "Ledian",
     "bst": 390,
-    "baseExp": 137
+    "baseExp": 137,
+    "fullyEvolved": true
   },
   {
     "number": 167,
@@ -1005,13 +1078,15 @@
     "number": 168,
     "name": "Ariados",
     "bst": 400,
-    "baseExp": 140
+    "baseExp": 140,
+    "fullyEvolved": true
   },
   {
     "number": 169,
     "name": "Crobat",
     "bst": 535,
-    "baseExp": 268
+    "baseExp": 268,
+    "fullyEvolved": true
   },
   {
     "number": 170,
@@ -1023,7 +1098,8 @@
     "number": 171,
     "name": "Lanturn",
     "bst": 460,
-    "baseExp": 161
+    "baseExp": 161,
+    "fullyEvolved": true
   },
   {
     "number": 172,
@@ -1065,7 +1141,8 @@
     "number": 178,
     "name": "Xatu",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 179,
@@ -1083,13 +1160,15 @@
     "number": 181,
     "name": "Ampharos",
     "bst": 510,
-    "baseExp": 255
+    "baseExp": 255,
+    "fullyEvolved": true
   },
   {
     "number": 182,
     "name": "Bellossom",
     "bst": 490,
-    "baseExp": 245
+    "baseExp": 245,
+    "fullyEvolved": true
   },
   {
     "number": 183,
@@ -1101,19 +1180,22 @@
     "number": 184,
     "name": "Azumarill",
     "bst": 420,
-    "baseExp": 210
+    "baseExp": 210,
+    "fullyEvolved": true
   },
   {
     "number": 185,
     "name": "Sudowoodo",
     "bst": 410,
-    "baseExp": 144
+    "baseExp": 144,
+    "fullyEvolved": true
   },
   {
     "number": 186,
     "name": "Politoed",
     "bst": 500,
-    "baseExp": 250
+    "baseExp": 250,
+    "fullyEvolved": true
   },
   {
     "number": 187,
@@ -1131,7 +1213,8 @@
     "number": 189,
     "name": "Jumpluff",
     "bst": 460,
-    "baseExp": 230
+    "baseExp": 230,
+    "fullyEvolved": true
   },
   {
     "number": 190,
@@ -1149,7 +1232,8 @@
     "number": 192,
     "name": "Sunflora",
     "bst": 425,
-    "baseExp": 149
+    "baseExp": 149,
+    "fullyEvolved": true
   },
   {
     "number": 193,
@@ -1167,19 +1251,22 @@
     "number": 195,
     "name": "Quagsire",
     "bst": 430,
-    "baseExp": 151
+    "baseExp": 151,
+    "fullyEvolved": true
   },
   {
     "number": 196,
     "name": "Espeon",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 197,
     "name": "Umbreon",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 198,
@@ -1191,7 +1278,8 @@
     "number": 199,
     "name": "Slowking",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 200,
@@ -1203,13 +1291,15 @@
     "number": 201,
     "name": "Unown",
     "bst": 336,
-    "baseExp": 118
+    "baseExp": 118,
+    "fullyEvolved": true
   },
   {
     "number": 202,
     "name": "Wobbuffet",
     "bst": 405,
-    "baseExp": 142
+    "baseExp": 142,
+    "fullyEvolved": true
   },
   {
     "number": 203,
@@ -1227,7 +1317,8 @@
     "number": 205,
     "name": "Forretress",
     "bst": 465,
-    "baseExp": 163
+    "baseExp": 163,
+    "fullyEvolved": true
   },
   {
     "number": 206,
@@ -1245,7 +1336,8 @@
     "number": 208,
     "name": "Steelix",
     "bst": 510,
-    "baseExp": 179
+    "baseExp": 179,
+    "fullyEvolved": true
   },
   {
     "number": 209,
@@ -1257,7 +1349,8 @@
     "number": 210,
     "name": "Granbull",
     "bst": 450,
-    "baseExp": 158
+    "baseExp": 158,
+    "fullyEvolved": true
   },
   {
     "number": 211,
@@ -1269,19 +1362,22 @@
     "number": 212,
     "name": "Scizor",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 213,
     "name": "Shuckle",
     "bst": 505,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 214,
     "name": "Heracross",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 215,
@@ -1311,7 +1407,8 @@
     "number": 219,
     "name": "Magcargo",
     "bst": 430,
-    "baseExp": 151
+    "baseExp": 151,
+    "fullyEvolved": true
   },
   {
     "number": 220,
@@ -1341,25 +1438,29 @@
     "number": 224,
     "name": "Octillery",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 225,
     "name": "Delibird",
     "bst": 330,
-    "baseExp": 116
+    "baseExp": 116,
+    "fullyEvolved": true
   },
   {
     "number": 226,
     "name": "Mantine",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 227,
     "name": "Skarmory",
     "bst": 465,
-    "baseExp": 163
+    "baseExp": 163,
+    "fullyEvolved": true
   },
   {
     "number": 228,
@@ -1371,13 +1472,15 @@
     "number": 229,
     "name": "Houndoom",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 230,
     "name": "Kingdra",
     "bst": 540,
-    "baseExp": 270
+    "baseExp": 270,
+    "fullyEvolved": true
   },
   {
     "number": 231,
@@ -1389,7 +1492,8 @@
     "number": 232,
     "name": "Donphan",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 233,
@@ -1407,7 +1511,8 @@
     "number": 235,
     "name": "Smeargle",
     "bst": 250,
-    "baseExp": 88
+    "baseExp": 88,
+    "fullyEvolved": true
   },
   {
     "number": 236,
@@ -1419,7 +1524,8 @@
     "number": 237,
     "name": "Hitmontop",
     "bst": 455,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 238,
@@ -1443,31 +1549,36 @@
     "number": 241,
     "name": "Miltank",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 242,
     "name": "Blissey",
     "bst": 540,
-    "baseExp": 608
+    "baseExp": 608,
+    "fullyEvolved": true
   },
   {
     "number": 243,
     "name": "Raikou",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 244,
     "name": "Entei",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 245,
     "name": "Suicune",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 246,
@@ -1485,25 +1596,29 @@
     "number": 248,
     "name": "Tyranitar",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 249,
     "name": "Lugia",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 250,
     "name": "Ho-oh",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 251,
     "name": "Celebi",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 252,
@@ -1521,7 +1636,8 @@
     "number": 254,
     "name": "Sceptile",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 255,
@@ -1539,7 +1655,8 @@
     "number": 257,
     "name": "Blaziken",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 258,
@@ -1557,7 +1674,8 @@
     "number": 260,
     "name": "Swampert",
     "bst": 535,
-    "baseExp": 268
+    "baseExp": 268,
+    "fullyEvolved": true
   },
   {
     "number": 261,
@@ -1569,7 +1687,8 @@
     "number": 262,
     "name": "Mightyena",
     "bst": 420,
-    "baseExp": 147
+    "baseExp": 147,
+    "fullyEvolved": true
   },
   {
     "number": 263,
@@ -1599,7 +1718,8 @@
     "number": 267,
     "name": "Beautifly",
     "bst": 395,
-    "baseExp": 198
+    "baseExp": 198,
+    "fullyEvolved": true
   },
   {
     "number": 268,
@@ -1611,7 +1731,8 @@
     "number": 269,
     "name": "Dustox",
     "bst": 385,
-    "baseExp": 193
+    "baseExp": 193,
+    "fullyEvolved": true
   },
   {
     "number": 270,
@@ -1629,7 +1750,8 @@
     "number": 272,
     "name": "Ludicolo",
     "bst": 480,
-    "baseExp": 240
+    "baseExp": 240,
+    "fullyEvolved": true
   },
   {
     "number": 273,
@@ -1647,7 +1769,8 @@
     "number": 275,
     "name": "Shiftry",
     "bst": 480,
-    "baseExp": 240
+    "baseExp": 240,
+    "fullyEvolved": true
   },
   {
     "number": 276,
@@ -1659,7 +1782,8 @@
     "number": 277,
     "name": "Swellow",
     "bst": 455,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 278,
@@ -1671,7 +1795,8 @@
     "number": 279,
     "name": "Pelipper",
     "bst": 440,
-    "baseExp": 154
+    "baseExp": 154,
+    "fullyEvolved": true
   },
   {
     "number": 280,
@@ -1689,7 +1814,8 @@
     "number": 282,
     "name": "Gardevoir",
     "bst": 518,
-    "baseExp": 259
+    "baseExp": 259,
+    "fullyEvolved": true
   },
   {
     "number": 283,
@@ -1701,7 +1827,8 @@
     "number": 284,
     "name": "Masquerain",
     "bst": 454,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 285,
@@ -1713,7 +1840,8 @@
     "number": 286,
     "name": "Breloom",
     "bst": 460,
-    "baseExp": 161
+    "baseExp": 161,
+    "fullyEvolved": true
   },
   {
     "number": 287,
@@ -1731,7 +1859,8 @@
     "number": 289,
     "name": "Slaking",
     "bst": 670,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 290,
@@ -1743,13 +1872,15 @@
     "number": 291,
     "name": "Ninjask",
     "bst": 456,
-    "baseExp": 160
+    "baseExp": 160,
+    "fullyEvolved": true
   },
   {
     "number": 292,
     "name": "Shedinja",
     "bst": 236,
-    "baseExp": 83
+    "baseExp": 83,
+    "fullyEvolved": true
   },
   {
     "number": 293,
@@ -1767,7 +1898,8 @@
     "number": 295,
     "name": "Exploud",
     "bst": 490,
-    "baseExp": 245
+    "baseExp": 245,
+    "fullyEvolved": true
   },
   {
     "number": 296,
@@ -1779,7 +1911,8 @@
     "number": 297,
     "name": "Hariyama",
     "bst": 474,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 298,
@@ -1803,19 +1936,22 @@
     "number": 301,
     "name": "Delcatty",
     "bst": 400,
-    "baseExp": 140
+    "baseExp": 140,
+    "fullyEvolved": true
   },
   {
     "number": 302,
     "name": "Sableye",
     "bst": 380,
-    "baseExp": 133
+    "baseExp": 133,
+    "fullyEvolved": true
   },
   {
     "number": 303,
     "name": "Mawile",
     "bst": 380,
-    "baseExp": 133
+    "baseExp": 133,
+    "fullyEvolved": true
   },
   {
     "number": 304,
@@ -1833,7 +1969,8 @@
     "number": 306,
     "name": "Aggron",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 307,
@@ -1845,7 +1982,8 @@
     "number": 308,
     "name": "Medicham",
     "bst": 410,
-    "baseExp": 144
+    "baseExp": 144,
+    "fullyEvolved": true
   },
   {
     "number": 309,
@@ -1857,31 +1995,36 @@
     "number": 310,
     "name": "Manectric",
     "bst": 475,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 311,
     "name": "Plusle",
     "bst": 405,
-    "baseExp": 142
+    "baseExp": 142,
+    "fullyEvolved": true
   },
   {
     "number": 312,
     "name": "Minun",
     "bst": 405,
-    "baseExp": 142
+    "baseExp": 142,
+    "fullyEvolved": true
   },
   {
     "number": 313,
     "name": "Volbeat",
     "bst": 430,
-    "baseExp": 151
+    "baseExp": 151,
+    "fullyEvolved": true
   },
   {
     "number": 314,
     "name": "Illumise",
     "bst": 430,
-    "baseExp": 151
+    "baseExp": 151,
+    "fullyEvolved": true
   },
   {
     "number": 315,
@@ -1899,7 +2042,8 @@
     "number": 317,
     "name": "Swalot",
     "bst": 467,
-    "baseExp": 163
+    "baseExp": 163,
+    "fullyEvolved": true
   },
   {
     "number": 318,
@@ -1911,7 +2055,8 @@
     "number": 319,
     "name": "Sharpedo",
     "bst": 460,
-    "baseExp": 161
+    "baseExp": 161,
+    "fullyEvolved": true
   },
   {
     "number": 320,
@@ -1923,7 +2068,8 @@
     "number": 321,
     "name": "Wailord",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 322,
@@ -1935,13 +2081,15 @@
     "number": 323,
     "name": "Camerupt",
     "bst": 460,
-    "baseExp": 161
+    "baseExp": 161,
+    "fullyEvolved": true
   },
   {
     "number": 324,
     "name": "Torkoal",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 325,
@@ -1953,13 +2101,15 @@
     "number": 326,
     "name": "Grumpig",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 327,
     "name": "Spinda",
     "bst": 360,
-    "baseExp": 126
+    "baseExp": 126,
+    "fullyEvolved": true
   },
   {
     "number": 328,
@@ -1977,7 +2127,8 @@
     "number": 330,
     "name": "Flygon",
     "bst": 520,
-    "baseExp": 260
+    "baseExp": 260,
+    "fullyEvolved": true
   },
   {
     "number": 331,
@@ -1989,7 +2140,8 @@
     "number": 332,
     "name": "Cacturne",
     "bst": 475,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 333,
@@ -2001,31 +2153,36 @@
     "number": 334,
     "name": "Altaria",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 335,
     "name": "Zangoose",
     "bst": 458,
-    "baseExp": 160
+    "baseExp": 160,
+    "fullyEvolved": true
   },
   {
     "number": 336,
     "name": "Seviper",
     "bst": 458,
-    "baseExp": 160
+    "baseExp": 160,
+    "fullyEvolved": true
   },
   {
     "number": 337,
     "name": "Lunatone",
     "bst": 460,
-    "baseExp": 161
+    "baseExp": 161,
+    "fullyEvolved": true
   },
   {
     "number": 338,
     "name": "Solrock",
     "bst": 460,
-    "baseExp": 161
+    "baseExp": 161,
+    "fullyEvolved": true
   },
   {
     "number": 339,
@@ -2037,7 +2194,8 @@
     "number": 340,
     "name": "Whiscash",
     "bst": 468,
-    "baseExp": 164
+    "baseExp": 164,
+    "fullyEvolved": true
   },
   {
     "number": 341,
@@ -2049,7 +2207,8 @@
     "number": 342,
     "name": "Crawdaunt",
     "bst": 468,
-    "baseExp": 164
+    "baseExp": 164,
+    "fullyEvolved": true
   },
   {
     "number": 343,
@@ -2061,7 +2220,8 @@
     "number": 344,
     "name": "Claydol",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 345,
@@ -2073,7 +2233,8 @@
     "number": 346,
     "name": "Cradily",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 347,
@@ -2085,7 +2246,8 @@
     "number": 348,
     "name": "Armaldo",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 349,
@@ -2097,19 +2259,22 @@
     "number": 350,
     "name": "Milotic",
     "bst": 540,
-    "baseExp": 189
+    "baseExp": 189,
+    "fullyEvolved": true
   },
   {
     "number": 351,
     "name": "Castform",
     "bst": 420,
-    "baseExp": 147
+    "baseExp": 147,
+    "fullyEvolved": true
   },
   {
     "number": 352,
     "name": "Kecleon",
     "bst": 440,
-    "baseExp": 154
+    "baseExp": 154,
+    "fullyEvolved": true
   },
   {
     "number": 353,
@@ -2121,7 +2286,8 @@
     "number": 354,
     "name": "Banette",
     "bst": 455,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 355,
@@ -2139,19 +2305,22 @@
     "number": 357,
     "name": "Tropius",
     "bst": 460,
-    "baseExp": 161
+    "baseExp": 161,
+    "fullyEvolved": true
   },
   {
     "number": 358,
     "name": "Chimecho",
     "bst": 455,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 359,
     "name": "Absol",
     "bst": 465,
-    "baseExp": 163
+    "baseExp": 163,
+    "fullyEvolved": true
   },
   {
     "number": 360,
@@ -2169,7 +2338,8 @@
     "number": 362,
     "name": "Glalie",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 363,
@@ -2187,7 +2357,8 @@
     "number": 365,
     "name": "Walrein",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 366,
@@ -2199,25 +2370,29 @@
     "number": 367,
     "name": "Huntail",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 368,
     "name": "Gorebyss",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 369,
     "name": "Relicanth",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 370,
     "name": "Luvdisc",
     "bst": 330,
-    "baseExp": 116
+    "baseExp": 116,
+    "fullyEvolved": true
   },
   {
     "number": 371,
@@ -2235,7 +2410,8 @@
     "number": 373,
     "name": "Salamence",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 374,
@@ -2253,67 +2429,78 @@
     "number": 376,
     "name": "Metagross",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 377,
     "name": "Regirock",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 378,
     "name": "Regice",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 379,
     "name": "Registeel",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 380,
     "name": "Latias",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 381,
     "name": "Latios",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 382,
     "name": "Kyogre",
     "bst": 670,
-    "baseExp": 335
+    "baseExp": 335,
+    "fullyEvolved": true
   },
   {
     "number": 383,
     "name": "Groudon",
     "bst": 670,
-    "baseExp": 335
+    "baseExp": 335,
+    "fullyEvolved": true
   },
   {
     "number": 384,
     "name": "Rayquaza",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 385,
     "name": "Jirachi",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 386,
     "name": "Deoxys",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 387,
@@ -2331,7 +2518,8 @@
     "number": 389,
     "name": "Torterra",
     "bst": 525,
-    "baseExp": 263
+    "baseExp": 263,
+    "fullyEvolved": true
   },
   {
     "number": 390,
@@ -2349,7 +2537,8 @@
     "number": 392,
     "name": "Infernape",
     "bst": 534,
-    "baseExp": 267
+    "baseExp": 267,
+    "fullyEvolved": true
   },
   {
     "number": 393,
@@ -2367,7 +2556,8 @@
     "number": 395,
     "name": "Empoleon",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 396,
@@ -2385,7 +2575,8 @@
     "number": 398,
     "name": "Staraptor",
     "bst": 485,
-    "baseExp": 243
+    "baseExp": 243,
+    "fullyEvolved": true
   },
   {
     "number": 399,
@@ -2397,7 +2588,8 @@
     "number": 400,
     "name": "Bibarel",
     "bst": 410,
-    "baseExp": 144
+    "baseExp": 144,
+    "fullyEvolved": true
   },
   {
     "number": 401,
@@ -2409,7 +2601,8 @@
     "number": 402,
     "name": "Kricketune",
     "bst": 384,
-    "baseExp": 134
+    "baseExp": 134,
+    "fullyEvolved": true
   },
   {
     "number": 403,
@@ -2427,7 +2620,8 @@
     "number": 405,
     "name": "Luxray",
     "bst": 523,
-    "baseExp": 262
+    "baseExp": 262,
+    "fullyEvolved": true
   },
   {
     "number": 406,
@@ -2439,7 +2633,8 @@
     "number": 407,
     "name": "Roserade",
     "bst": 515,
-    "baseExp": 258
+    "baseExp": 258,
+    "fullyEvolved": true
   },
   {
     "number": 408,
@@ -2451,7 +2646,8 @@
     "number": 409,
     "name": "Rampardos",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 410,
@@ -2463,7 +2659,8 @@
     "number": 411,
     "name": "Bastiodon",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 412,
@@ -2475,13 +2672,15 @@
     "number": 413,
     "name": "Wormadam",
     "bst": 424,
-    "baseExp": 148
+    "baseExp": 148,
+    "fullyEvolved": true
   },
   {
     "number": 414,
     "name": "Mothim",
     "bst": 424,
-    "baseExp": 148
+    "baseExp": 148,
+    "fullyEvolved": true
   },
   {
     "number": 415,
@@ -2493,13 +2692,15 @@
     "number": 416,
     "name": "Vespiquen",
     "bst": 474,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 417,
     "name": "Pachirisu",
     "bst": 405,
-    "baseExp": 142
+    "baseExp": 142,
+    "fullyEvolved": true
   },
   {
     "number": 418,
@@ -2511,7 +2712,8 @@
     "number": 419,
     "name": "Floatzel",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 420,
@@ -2523,7 +2725,8 @@
     "number": 421,
     "name": "Cherrim",
     "bst": 450,
-    "baseExp": 158
+    "baseExp": 158,
+    "fullyEvolved": true
   },
   {
     "number": 422,
@@ -2535,13 +2738,15 @@
     "number": 423,
     "name": "Gastrodon",
     "bst": 475,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 424,
     "name": "Ambipom",
     "bst": 482,
-    "baseExp": 169
+    "baseExp": 169,
+    "fullyEvolved": true
   },
   {
     "number": 425,
@@ -2553,7 +2758,8 @@
     "number": 426,
     "name": "Drifblim",
     "bst": 498,
-    "baseExp": 174
+    "baseExp": 174,
+    "fullyEvolved": true
   },
   {
     "number": 427,
@@ -2565,19 +2771,22 @@
     "number": 428,
     "name": "Lopunny",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 429,
     "name": "Mismagius",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 430,
     "name": "Honchkrow",
     "bst": 505,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 431,
@@ -2589,7 +2798,8 @@
     "number": 432,
     "name": "Purugly",
     "bst": 452,
-    "baseExp": 158
+    "baseExp": 158,
+    "fullyEvolved": true
   },
   {
     "number": 433,
@@ -2607,7 +2817,8 @@
     "number": 435,
     "name": "Skuntank",
     "bst": 479,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 436,
@@ -2619,7 +2830,8 @@
     "number": 437,
     "name": "Bronzong",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 438,
@@ -2643,13 +2855,15 @@
     "number": 441,
     "name": "Chatot",
     "bst": 411,
-    "baseExp": 144
+    "baseExp": 144,
+    "fullyEvolved": true
   },
   {
     "number": 442,
     "name": "Spiritomb",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 443,
@@ -2667,7 +2881,8 @@
     "number": 445,
     "name": "Garchomp",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 446,
@@ -2685,7 +2900,8 @@
     "number": 448,
     "name": "Lucario",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 449,
@@ -2697,7 +2913,8 @@
     "number": 450,
     "name": "Hippowdon",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 451,
@@ -2709,7 +2926,8 @@
     "number": 452,
     "name": "Drapion",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 453,
@@ -2721,13 +2939,15 @@
     "number": 454,
     "name": "Toxicroak",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 455,
     "name": "Carnivine",
     "bst": 454,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 456,
@@ -2739,7 +2959,8 @@
     "number": 457,
     "name": "Lumineon",
     "bst": 460,
-    "baseExp": 161
+    "baseExp": 161,
+    "fullyEvolved": true
   },
   {
     "number": 458,
@@ -2757,211 +2978,246 @@
     "number": 460,
     "name": "Abomasnow",
     "bst": 494,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 461,
     "name": "Weavile",
     "bst": 510,
-    "baseExp": 179
+    "baseExp": 179,
+    "fullyEvolved": true
   },
   {
     "number": 462,
     "name": "Magnezone",
     "bst": 535,
-    "baseExp": 268
+    "baseExp": 268,
+    "fullyEvolved": true
   },
   {
     "number": 463,
     "name": "Lickilicky",
     "bst": 515,
-    "baseExp": 180
+    "baseExp": 180,
+    "fullyEvolved": true
   },
   {
     "number": 464,
     "name": "Rhyperior",
     "bst": 535,
-    "baseExp": 268
+    "baseExp": 268,
+    "fullyEvolved": true
   },
   {
     "number": 465,
     "name": "Tangrowth",
     "bst": 535,
-    "baseExp": 187
+    "baseExp": 187,
+    "fullyEvolved": true
   },
   {
     "number": 466,
     "name": "Electivire",
     "bst": 540,
-    "baseExp": 270
+    "baseExp": 270,
+    "fullyEvolved": true
   },
   {
     "number": 467,
     "name": "Magmortar",
     "bst": 540,
-    "baseExp": 270
+    "baseExp": 270,
+    "fullyEvolved": true
   },
   {
     "number": 468,
     "name": "Togekiss",
     "bst": 545,
-    "baseExp": 273
+    "baseExp": 273,
+    "fullyEvolved": true
   },
   {
     "number": 469,
     "name": "Yanmega",
     "bst": 515,
-    "baseExp": 180
+    "baseExp": 180,
+    "fullyEvolved": true
   },
   {
     "number": 470,
     "name": "Leafeon",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 471,
     "name": "Glaceon",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 472,
     "name": "Gliscor",
     "bst": 510,
-    "baseExp": 179
+    "baseExp": 179,
+    "fullyEvolved": true
   },
   {
     "number": 473,
     "name": "Mamoswine",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 474,
     "name": "Porygon-Z",
     "bst": 535,
-    "baseExp": 268
+    "baseExp": 268,
+    "fullyEvolved": true
   },
   {
     "number": 475,
     "name": "Gallade",
     "bst": 518,
-    "baseExp": 259
+    "baseExp": 259,
+    "fullyEvolved": true
   },
   {
     "number": 476,
     "name": "Probopass",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 477,
     "name": "Dusknoir",
     "bst": 525,
-    "baseExp": 263
+    "baseExp": 263,
+    "fullyEvolved": true
   },
   {
     "number": 478,
     "name": "Froslass",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 479,
     "name": "Rotom",
     "bst": 440,
-    "baseExp": 154
+    "baseExp": 154,
+    "fullyEvolved": true
   },
   {
     "number": 480,
     "name": "Uxie",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 481,
     "name": "Mesprit",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 482,
     "name": "Azelf",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 483,
     "name": "Dialga",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 484,
     "name": "Palkia",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 485,
     "name": "Heatran",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 486,
     "name": "Regigigas",
     "bst": 670,
-    "baseExp": 335
+    "baseExp": 335,
+    "fullyEvolved": true
   },
   {
     "number": 487,
     "name": "Giratina",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 488,
     "name": "Cresselia",
     "bst": 580,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 489,
     "name": "Phione",
     "bst": 480,
-    "baseExp": 240
+    "baseExp": 240,
+    "fullyEvolved": true
   },
   {
     "number": 490,
     "name": "Manaphy",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 491,
     "name": "Darkrai",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 492,
     "name": "Shaymin",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 493,
     "name": "Arceus",
     "bst": 720,
-    "baseExp": 360
+    "baseExp": 360,
+    "fullyEvolved": true
   },
   {
     "number": 494,
     "name": "Victini",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 495,
@@ -2979,7 +3235,8 @@
     "number": 497,
     "name": "Serperior",
     "bst": 528,
-    "baseExp": 264
+    "baseExp": 264,
+    "fullyEvolved": true
   },
   {
     "number": 498,
@@ -2997,7 +3254,8 @@
     "number": 500,
     "name": "Emboar",
     "bst": 528,
-    "baseExp": 264
+    "baseExp": 264,
+    "fullyEvolved": true
   },
   {
     "number": 501,
@@ -3015,7 +3273,8 @@
     "number": 503,
     "name": "Samurott",
     "bst": 528,
-    "baseExp": 264
+    "baseExp": 264,
+    "fullyEvolved": true
   },
   {
     "number": 504,
@@ -3027,7 +3286,8 @@
     "number": 505,
     "name": "Watchog",
     "bst": 420,
-    "baseExp": 147
+    "baseExp": 147,
+    "fullyEvolved": true
   },
   {
     "number": 506,
@@ -3045,7 +3305,8 @@
     "number": 508,
     "name": "Stoutland",
     "bst": 500,
-    "baseExp": 250
+    "baseExp": 250,
+    "fullyEvolved": true
   },
   {
     "number": 509,
@@ -3057,7 +3318,8 @@
     "number": 510,
     "name": "Liepard",
     "bst": 446,
-    "baseExp": 156
+    "baseExp": 156,
+    "fullyEvolved": true
   },
   {
     "number": 511,
@@ -3069,7 +3331,8 @@
     "number": 512,
     "name": "Simisage",
     "bst": 498,
-    "baseExp": 174
+    "baseExp": 174,
+    "fullyEvolved": true
   },
   {
     "number": 513,
@@ -3081,7 +3344,8 @@
     "number": 514,
     "name": "Simisear",
     "bst": 498,
-    "baseExp": 174
+    "baseExp": 174,
+    "fullyEvolved": true
   },
   {
     "number": 515,
@@ -3093,7 +3357,8 @@
     "number": 516,
     "name": "Simipour",
     "bst": 498,
-    "baseExp": 174
+    "baseExp": 174,
+    "fullyEvolved": true
   },
   {
     "number": 517,
@@ -3105,7 +3370,8 @@
     "number": 518,
     "name": "Musharna",
     "bst": 487,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 519,
@@ -3123,7 +3389,8 @@
     "number": 521,
     "name": "Unfezant",
     "bst": 488,
-    "baseExp": 244
+    "baseExp": 244,
+    "fullyEvolved": true
   },
   {
     "number": 522,
@@ -3135,7 +3402,8 @@
     "number": 523,
     "name": "Zebstrika",
     "bst": 497,
-    "baseExp": 174
+    "baseExp": 174,
+    "fullyEvolved": true
   },
   {
     "number": 524,
@@ -3153,7 +3421,8 @@
     "number": 526,
     "name": "Gigalith",
     "bst": 515,
-    "baseExp": 258
+    "baseExp": 258,
+    "fullyEvolved": true
   },
   {
     "number": 527,
@@ -3165,7 +3434,8 @@
     "number": 528,
     "name": "Swoobat",
     "bst": 425,
-    "baseExp": 149
+    "baseExp": 149,
+    "fullyEvolved": true
   },
   {
     "number": 529,
@@ -3177,13 +3447,15 @@
     "number": 530,
     "name": "Excadrill",
     "bst": 508,
-    "baseExp": 178
+    "baseExp": 178,
+    "fullyEvolved": true
   },
   {
     "number": 531,
     "name": "Audino",
     "bst": 445,
-    "baseExp": 390
+    "baseExp": 390,
+    "fullyEvolved": true
   },
   {
     "number": 532,
@@ -3201,7 +3473,8 @@
     "number": 534,
     "name": "Conkeldurr",
     "bst": 505,
-    "baseExp": 253
+    "baseExp": 253,
+    "fullyEvolved": true
   },
   {
     "number": 535,
@@ -3219,19 +3492,22 @@
     "number": 537,
     "name": "Seismitoad",
     "bst": 509,
-    "baseExp": 255
+    "baseExp": 255,
+    "fullyEvolved": true
   },
   {
     "number": 538,
     "name": "Throh",
     "bst": 465,
-    "baseExp": 163
+    "baseExp": 163,
+    "fullyEvolved": true
   },
   {
     "number": 539,
     "name": "Sawk",
     "bst": 465,
-    "baseExp": 163
+    "baseExp": 163,
+    "fullyEvolved": true
   },
   {
     "number": 540,
@@ -3249,7 +3525,8 @@
     "number": 542,
     "name": "Leavanny",
     "bst": 500,
-    "baseExp": 250
+    "baseExp": 250,
+    "fullyEvolved": true
   },
   {
     "number": 543,
@@ -3267,7 +3544,8 @@
     "number": 545,
     "name": "Scolipede",
     "bst": 485,
-    "baseExp": 243
+    "baseExp": 243,
+    "fullyEvolved": true
   },
   {
     "number": 546,
@@ -3279,7 +3557,8 @@
     "number": 547,
     "name": "Whimsicott",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 548,
@@ -3291,7 +3570,8 @@
     "number": 549,
     "name": "Lilligant",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 550,
@@ -3315,7 +3595,8 @@
     "number": 553,
     "name": "Krookodile",
     "bst": 519,
-    "baseExp": 260
+    "baseExp": 260,
+    "fullyEvolved": true
   },
   {
     "number": 554,
@@ -3327,13 +3608,15 @@
     "number": 555,
     "name": "Darmanitan",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 556,
     "name": "Maractus",
     "bst": 461,
-    "baseExp": 161
+    "baseExp": 161,
+    "fullyEvolved": true
   },
   {
     "number": 557,
@@ -3345,7 +3628,8 @@
     "number": 558,
     "name": "Crustle",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 559,
@@ -3357,13 +3641,15 @@
     "number": 560,
     "name": "Scrafty",
     "bst": 488,
-    "baseExp": 171
+    "baseExp": 171,
+    "fullyEvolved": true
   },
   {
     "number": 561,
     "name": "Sigilyph",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 562,
@@ -3375,7 +3661,8 @@
     "number": 563,
     "name": "Cofagrigus",
     "bst": 483,
-    "baseExp": 169
+    "baseExp": 169,
+    "fullyEvolved": true
   },
   {
     "number": 564,
@@ -3387,7 +3674,8 @@
     "number": 565,
     "name": "Carracosta",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 566,
@@ -3399,7 +3687,8 @@
     "number": 567,
     "name": "Archeops",
     "bst": 567,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 568,
@@ -3411,7 +3700,8 @@
     "number": 569,
     "name": "Garbodor",
     "bst": 474,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 570,
@@ -3423,7 +3713,8 @@
     "number": 571,
     "name": "Zoroark",
     "bst": 510,
-    "baseExp": 179
+    "baseExp": 179,
+    "fullyEvolved": true
   },
   {
     "number": 572,
@@ -3435,7 +3726,8 @@
     "number": 573,
     "name": "Cinccino",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 574,
@@ -3453,7 +3745,8 @@
     "number": 576,
     "name": "Gothitelle",
     "bst": 490,
-    "baseExp": 245
+    "baseExp": 245,
+    "fullyEvolved": true
   },
   {
     "number": 577,
@@ -3471,7 +3764,8 @@
     "number": 579,
     "name": "Reuniclus",
     "bst": 490,
-    "baseExp": 245
+    "baseExp": 245,
+    "fullyEvolved": true
   },
   {
     "number": 580,
@@ -3483,7 +3777,8 @@
     "number": 581,
     "name": "Swanna",
     "bst": 473,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 582,
@@ -3501,7 +3796,8 @@
     "number": 584,
     "name": "Vanilluxe",
     "bst": 535,
-    "baseExp": 268
+    "baseExp": 268,
+    "fullyEvolved": true
   },
   {
     "number": 585,
@@ -3513,13 +3809,15 @@
     "number": 586,
     "name": "Sawsbuck",
     "bst": 475,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 587,
     "name": "Emolga",
     "bst": 428,
-    "baseExp": 150
+    "baseExp": 150,
+    "fullyEvolved": true
   },
   {
     "number": 588,
@@ -3531,7 +3829,8 @@
     "number": 589,
     "name": "Escavalier",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 590,
@@ -3543,7 +3842,8 @@
     "number": 591,
     "name": "Amoonguss",
     "bst": 464,
-    "baseExp": 162
+    "baseExp": 162,
+    "fullyEvolved": true
   },
   {
     "number": 592,
@@ -3555,13 +3855,15 @@
     "number": 593,
     "name": "Jellicent",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 594,
     "name": "Alomomola",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 595,
@@ -3573,7 +3875,8 @@
     "number": 596,
     "name": "Galvantula",
     "bst": 472,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 597,
@@ -3585,7 +3888,8 @@
     "number": 598,
     "name": "Ferrothorn",
     "bst": 489,
-    "baseExp": 171
+    "baseExp": 171,
+    "fullyEvolved": true
   },
   {
     "number": 599,
@@ -3603,7 +3907,8 @@
     "number": 601,
     "name": "Klinklang",
     "bst": 520,
-    "baseExp": 260
+    "baseExp": 260,
+    "fullyEvolved": true
   },
   {
     "number": 602,
@@ -3621,7 +3926,8 @@
     "number": 604,
     "name": "Eelektross",
     "bst": 515,
-    "baseExp": 258
+    "baseExp": 258,
+    "fullyEvolved": true
   },
   {
     "number": 605,
@@ -3633,7 +3939,8 @@
     "number": 606,
     "name": "Beheeyem",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 607,
@@ -3651,7 +3958,8 @@
     "number": 609,
     "name": "Chandelure",
     "bst": 520,
-    "baseExp": 260
+    "baseExp": 260,
+    "fullyEvolved": true
   },
   {
     "number": 610,
@@ -3669,7 +3977,8 @@
     "number": 612,
     "name": "Haxorus",
     "bst": 540,
-    "baseExp": 270
+    "baseExp": 270,
+    "fullyEvolved": true
   },
   {
     "number": 613,
@@ -3681,13 +3990,15 @@
     "number": 614,
     "name": "Beartic",
     "bst": 505,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 615,
     "name": "Cryogonal",
     "bst": 515,
-    "baseExp": 180
+    "baseExp": 180,
+    "fullyEvolved": true
   },
   {
     "number": 616,
@@ -3699,13 +4010,15 @@
     "number": 617,
     "name": "Accelgor",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 618,
     "name": "Stunfisk",
     "bst": 471,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 619,
@@ -3717,13 +4030,15 @@
     "number": 620,
     "name": "Mienshao",
     "bst": 510,
-    "baseExp": 179
+    "baseExp": 179,
+    "fullyEvolved": true
   },
   {
     "number": 621,
     "name": "Druddigon",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 622,
@@ -3735,7 +4050,8 @@
     "number": 623,
     "name": "Golurk",
     "bst": 483,
-    "baseExp": 169
+    "baseExp": 169,
+    "fullyEvolved": true
   },
   {
     "number": 624,
@@ -3753,7 +4069,8 @@
     "number": 626,
     "name": "Bouffalant",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 627,
@@ -3765,7 +4082,8 @@
     "number": 628,
     "name": "Braviary",
     "bst": 510,
-    "baseExp": 179
+    "baseExp": 179,
+    "fullyEvolved": true
   },
   {
     "number": 629,
@@ -3777,19 +4095,22 @@
     "number": 630,
     "name": "Mandibuzz",
     "bst": 510,
-    "baseExp": 179
+    "baseExp": 179,
+    "fullyEvolved": true
   },
   {
     "number": 631,
     "name": "Heatmor",
     "bst": 484,
-    "baseExp": 169
+    "baseExp": 169,
+    "fullyEvolved": true
   },
   {
     "number": 632,
     "name": "Durant",
     "bst": 484,
-    "baseExp": 169
+    "baseExp": 169,
+    "fullyEvolved": true
   },
   {
     "number": 633,
@@ -3807,7 +4128,8 @@
     "number": 635,
     "name": "Hydreigon",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 636,
@@ -3819,79 +4141,92 @@
     "number": 637,
     "name": "Volcarona",
     "bst": 550,
-    "baseExp": 275
+    "baseExp": 275,
+    "fullyEvolved": true
   },
   {
     "number": 638,
     "name": "Cobalion",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 639,
     "name": "Terrakion",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 640,
     "name": "Virizion",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 641,
     "name": "Tornadus",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 642,
     "name": "Thundurus",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 643,
     "name": "Reshiram",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 644,
     "name": "Zekrom",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 645,
     "name": "Landorus",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 646,
     "name": "Kyurem",
     "bst": 660,
-    "baseExp": 330
+    "baseExp": 330,
+    "fullyEvolved": true
   },
   {
     "number": 647,
     "name": "Keldeo",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 648,
     "name": "Meloetta",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 649,
     "name": "Genesect",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 650,
@@ -3909,7 +4244,8 @@
     "number": 652,
     "name": "Chesnaught",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 653,
@@ -3927,7 +4263,8 @@
     "number": 655,
     "name": "Delphox",
     "bst": 534,
-    "baseExp": 267
+    "baseExp": 267,
+    "fullyEvolved": true
   },
   {
     "number": 656,
@@ -3945,7 +4282,8 @@
     "number": 658,
     "name": "Greninja",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 659,
@@ -3957,7 +4295,8 @@
     "number": 660,
     "name": "Diggersby",
     "bst": 423,
-    "baseExp": 148
+    "baseExp": 148,
+    "fullyEvolved": true
   },
   {
     "number": 661,
@@ -3975,7 +4314,8 @@
     "number": 663,
     "name": "Talonflame",
     "bst": 499,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 664,
@@ -3993,7 +4333,8 @@
     "number": 666,
     "name": "Vivillon",
     "bst": 411,
-    "baseExp": 206
+    "baseExp": 206,
+    "fullyEvolved": true
   },
   {
     "number": 667,
@@ -4005,7 +4346,8 @@
     "number": 668,
     "name": "Pyroar",
     "bst": 507,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 669,
@@ -4023,7 +4365,8 @@
     "number": 671,
     "name": "Florges",
     "bst": 552,
-    "baseExp": 276
+    "baseExp": 276,
+    "fullyEvolved": true
   },
   {
     "number": 672,
@@ -4035,7 +4378,8 @@
     "number": 673,
     "name": "Gogoat",
     "bst": 531,
-    "baseExp": 186
+    "baseExp": 186,
+    "fullyEvolved": true
   },
   {
     "number": 674,
@@ -4047,13 +4391,15 @@
     "number": 675,
     "name": "Pangoro",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 676,
     "name": "Furfrou",
     "bst": 472,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 677,
@@ -4065,7 +4411,8 @@
     "number": 678,
     "name": "Meowstic",
     "bst": 466,
-    "baseExp": 163
+    "baseExp": 163,
+    "fullyEvolved": true
   },
   {
     "number": 679,
@@ -4083,7 +4430,8 @@
     "number": 681,
     "name": "Aegislash",
     "bst": 500,
-    "baseExp": 250
+    "baseExp": 250,
+    "fullyEvolved": true
   },
   {
     "number": 682,
@@ -4095,7 +4443,8 @@
     "number": 683,
     "name": "Aromatisse",
     "bst": 462,
-    "baseExp": 162
+    "baseExp": 162,
+    "fullyEvolved": true
   },
   {
     "number": 684,
@@ -4107,7 +4456,8 @@
     "number": 685,
     "name": "Slurpuff",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 686,
@@ -4119,7 +4469,8 @@
     "number": 687,
     "name": "Malamar",
     "bst": 482,
-    "baseExp": 169
+    "baseExp": 169,
+    "fullyEvolved": true
   },
   {
     "number": 688,
@@ -4131,7 +4482,8 @@
     "number": 689,
     "name": "Barbaracle",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 690,
@@ -4143,7 +4495,8 @@
     "number": 691,
     "name": "Dragalge",
     "bst": 494,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 692,
@@ -4155,7 +4508,8 @@
     "number": 693,
     "name": "Clawitzer",
     "bst": 500,
-    "baseExp": 100
+    "baseExp": 100,
+    "fullyEvolved": true
   },
   {
     "number": 694,
@@ -4167,7 +4521,8 @@
     "number": 695,
     "name": "Heliolisk",
     "bst": 481,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 696,
@@ -4179,7 +4534,8 @@
     "number": 697,
     "name": "Tyrantrum",
     "bst": 521,
-    "baseExp": 182
+    "baseExp": 182,
+    "fullyEvolved": true
   },
   {
     "number": 698,
@@ -4191,31 +4547,36 @@
     "number": 699,
     "name": "Aurorus",
     "bst": 521,
-    "baseExp": 104
+    "baseExp": 104,
+    "fullyEvolved": true
   },
   {
     "number": 700,
     "name": "Sylveon",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 701,
     "name": "Hawlucha",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 702,
     "name": "Dedenne",
     "bst": 431,
-    "baseExp": 151
+    "baseExp": 151,
+    "fullyEvolved": true
   },
   {
     "number": 703,
     "name": "Carbink",
     "bst": 500,
-    "baseExp": 100
+    "baseExp": 100,
+    "fullyEvolved": true
   },
   {
     "number": 704,
@@ -4233,13 +4594,15 @@
     "number": 706,
     "name": "Goodra",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 707,
     "name": "Klefki",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 708,
@@ -4251,7 +4614,8 @@
     "number": 709,
     "name": "Trevenant",
     "bst": 474,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 710,
@@ -4263,7 +4627,8 @@
     "number": 711,
     "name": "Gourgeist",
     "bst": 494,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 712,
@@ -4275,7 +4640,8 @@
     "number": 713,
     "name": "Avalugg",
     "bst": 514,
-    "baseExp": 180
+    "baseExp": 180,
+    "fullyEvolved": true
   },
   {
     "number": 714,
@@ -4287,43 +4653,50 @@
     "number": 715,
     "name": "Noivern",
     "bst": 535,
-    "baseExp": 187
+    "baseExp": 187,
+    "fullyEvolved": true
   },
   {
     "number": 716,
     "name": "Xerneas",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 717,
     "name": "Yveltal",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 718,
     "name": "Zygarde",
     "bst": 600,
-    "baseExp": 354
+    "baseExp": 354,
+    "fullyEvolved": true
   },
   {
     "number": 719,
     "name": "Diancie",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 720,
     "name": "Hoopa",
     "bst": 600,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 721,
     "name": "Volcanion",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 722,
@@ -4341,7 +4714,8 @@
     "number": 724,
     "name": "Decidueye",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 725,
@@ -4359,7 +4733,8 @@
     "number": 727,
     "name": "Incineroar",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 728,
@@ -4377,7 +4752,8 @@
     "number": 730,
     "name": "Primarina",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 731,
@@ -4395,7 +4771,8 @@
     "number": 733,
     "name": "Toucannon",
     "bst": 485,
-    "baseExp": 243
+    "baseExp": 243,
+    "fullyEvolved": true
   },
   {
     "number": 734,
@@ -4407,7 +4784,8 @@
     "number": 735,
     "name": "Gumshoos",
     "bst": 418,
-    "baseExp": 146
+    "baseExp": 146,
+    "fullyEvolved": true
   },
   {
     "number": 736,
@@ -4425,7 +4803,8 @@
     "number": 738,
     "name": "Vikavolt",
     "bst": 500,
-    "baseExp": 250
+    "baseExp": 250,
+    "fullyEvolved": true
   },
   {
     "number": 739,
@@ -4437,13 +4816,15 @@
     "number": 740,
     "name": "Crabominable",
     "bst": 478,
-    "baseExp": 167
+    "baseExp": 167,
+    "fullyEvolved": true
   },
   {
     "number": 741,
     "name": "Oricorio",
     "bst": 476,
-    "baseExp": 167
+    "baseExp": 167,
+    "fullyEvolved": true
   },
   {
     "number": 742,
@@ -4455,7 +4836,8 @@
     "number": 743,
     "name": "Ribombee",
     "bst": 464,
-    "baseExp": 162
+    "baseExp": 162,
+    "fullyEvolved": true
   },
   {
     "number": 744,
@@ -4467,13 +4849,15 @@
     "number": 745,
     "name": "Lycanroc",
     "bst": 487,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 746,
     "name": "Wishiwashi",
     "bst": 175,
-    "baseExp": 61
+    "baseExp": 61,
+    "fullyEvolved": true
   },
   {
     "number": 747,
@@ -4485,7 +4869,8 @@
     "number": 748,
     "name": "Toxapex",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 749,
@@ -4497,7 +4882,8 @@
     "number": 750,
     "name": "Mudsdale",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 751,
@@ -4509,7 +4895,8 @@
     "number": 752,
     "name": "Araquanid",
     "bst": 454,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 753,
@@ -4521,7 +4908,8 @@
     "number": 754,
     "name": "Lurantis",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 755,
@@ -4533,7 +4921,8 @@
     "number": 756,
     "name": "Shiinotic",
     "bst": 405,
-    "baseExp": 142
+    "baseExp": 142,
+    "fullyEvolved": true
   },
   {
     "number": 757,
@@ -4545,7 +4934,8 @@
     "number": 758,
     "name": "Salazzle",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 759,
@@ -4557,6 +4947,7 @@
     "number": 760,
     "name": "Bewear",
     "bst": 500,
+    "fullyEvolved": true,
     "baseExp": 175
   },
   {
@@ -4575,25 +4966,29 @@
     "number": 763,
     "name": "Tsareena",
     "bst": 510,
-    "baseExp": 255
+    "baseExp": 255,
+    "fullyEvolved": true
   },
   {
     "number": 764,
     "name": "Comfey",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 765,
     "name": "Oranguru",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 766,
     "name": "Passimian",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 767,
@@ -4605,7 +5000,8 @@
     "number": 768,
     "name": "Golisopod",
     "bst": 530,
-    "baseExp": 186
+    "baseExp": 186,
+    "fullyEvolved": true
   },
   {
     "number": 769,
@@ -4617,13 +5013,15 @@
     "number": 770,
     "name": "Palossand",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 771,
     "name": "Pyukumuku",
     "bst": 410,
-    "baseExp": 144
+    "baseExp": 144,
+    "fullyEvolved": true
   },
   {
     "number": 772,
@@ -4635,55 +5033,64 @@
     "number": 773,
     "name": "Silvally",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 774,
     "name": "Minior",
     "bst": 440,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 775,
     "name": "Komala",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 776,
     "name": "Turtonator",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 777,
     "name": "Togedemaru",
     "bst": 435,
-    "baseExp": 152
+    "baseExp": 152,
+    "fullyEvolved": true
   },
   {
     "number": 778,
     "name": "Mimikyu",
     "bst": 476,
-    "baseExp": 167
+    "baseExp": 167,
+    "fullyEvolved": true
   },
   {
     "number": 779,
     "name": "Bruxish",
     "bst": 475,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 780,
     "name": "Drampa",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 781,
     "name": "Dhelmise",
     "bst": 517,
-    "baseExp": 181
+    "baseExp": 181,
+    "fullyEvolved": true
   },
   {
     "number": 782,
@@ -4701,31 +5108,36 @@
     "number": 784,
     "name": "Kommo-o",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 785,
     "name": "Tapu Koko",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 786,
     "name": "Tapu Lele",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 787,
     "name": "Tapu Bulu",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 788,
     "name": "Tapu Fini",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 789,
@@ -4743,73 +5155,85 @@
     "number": 791,
     "name": "Solgaleo",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 792,
     "name": "Lunala",
     "bst": 680,
-    "baseExp": 340
+    "baseExp": 340,
+    "fullyEvolved": true
   },
   {
     "number": 793,
     "name": "Nihilego",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 794,
     "name": "Buzzwole",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 795,
     "name": "Pheromosa",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 796,
     "name": "Xurkitree",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 797,
     "name": "Celesteela",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 798,
     "name": "Kartana",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 799,
     "name": "Guzzlord",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 800,
     "name": "Necrozma",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 801,
     "name": "Magearna",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 802,
     "name": "Marshadow",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 803,
@@ -4821,25 +5245,29 @@
     "number": 804,
     "name": "Naganadel",
     "bst": 540,
-    "baseExp": 270
+    "baseExp": 270,
+    "fullyEvolved": true
   },
   {
     "number": 805,
     "name": "Stakataka",
     "bst": 570,
+    "fullyEvolved": true,
     "baseExp": 285
   },
   {
     "number": 806,
     "name": "Blacephalon",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 807,
     "name": "Zeraora",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 808,
@@ -4851,7 +5279,8 @@
     "number": 809,
     "name": "Melmetal",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 810,
@@ -4869,7 +5298,8 @@
     "number": 812,
     "name": "Rillaboom",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 813,
@@ -4887,7 +5317,8 @@
     "number": 815,
     "name": "Cinderace",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 816,
@@ -4905,7 +5336,8 @@
     "number": 818,
     "name": "Inteleon",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 819,
@@ -4917,7 +5349,8 @@
     "number": 820,
     "name": "Greedent",
     "bst": 460,
-    "baseExp": 161
+    "baseExp": 161,
+    "fullyEvolved": true
   },
   {
     "number": 821,
@@ -4935,7 +5368,8 @@
     "number": 823,
     "name": "Corviknight",
     "bst": 495,
-    "baseExp": 248
+    "baseExp": 248,
+    "fullyEvolved": true
   },
   {
     "number": 824,
@@ -4953,7 +5387,8 @@
     "number": 826,
     "name": "Orbeetle",
     "bst": 505,
-    "baseExp": 253
+    "baseExp": 253,
+    "fullyEvolved": true
   },
   {
     "number": 827,
@@ -4965,7 +5400,8 @@
     "number": 828,
     "name": "Thievul",
     "bst": 455,
-    "baseExp": 159
+    "baseExp": 159,
+    "fullyEvolved": true
   },
   {
     "number": 829,
@@ -4977,7 +5413,8 @@
     "number": 830,
     "name": "Eldegoss",
     "bst": 460,
-    "baseExp": 161
+    "baseExp": 161,
+    "fullyEvolved": true
   },
   {
     "number": 831,
@@ -4989,7 +5426,8 @@
     "number": 832,
     "name": "Dubwool",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 833,
@@ -5001,7 +5439,8 @@
     "number": 834,
     "name": "Drednaw",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 835,
@@ -5013,7 +5452,8 @@
     "number": 836,
     "name": "Boltund",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 837,
@@ -5031,7 +5471,8 @@
     "number": 839,
     "name": "Coalossal",
     "bst": 510,
-    "baseExp": 255
+    "baseExp": 255,
+    "fullyEvolved": true
   },
   {
     "number": 840,
@@ -5043,13 +5484,15 @@
     "number": 841,
     "name": "Flapple",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 842,
     "name": "Appletun",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 843,
@@ -5061,13 +5504,15 @@
     "number": 844,
     "name": "Sandaconda",
     "bst": 510,
-    "baseExp": 179
+    "baseExp": 179,
+    "fullyEvolved": true
   },
   {
     "number": 845,
     "name": "Cramorant",
     "bst": 475,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 846,
@@ -5079,7 +5524,8 @@
     "number": 847,
     "name": "Barraskewda",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 848,
@@ -5091,7 +5537,8 @@
     "number": 849,
     "name": "Toxtricity",
     "bst": 502,
-    "baseExp": 176
+    "baseExp": 176,
+    "fullyEvolved": true
   },
   {
     "number": 850,
@@ -5103,7 +5550,8 @@
     "number": 851,
     "name": "Centiskorch",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 852,
@@ -5115,7 +5563,8 @@
     "number": 853,
     "name": "Grapploct",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 854,
@@ -5127,7 +5576,8 @@
     "number": 855,
     "name": "Polteageist",
     "bst": 508,
-    "baseExp": 178
+    "baseExp": 178,
+    "fullyEvolved": true
   },
   {
     "number": 856,
@@ -5145,7 +5595,8 @@
     "number": 858,
     "name": "Hatterene",
     "bst": 510,
-    "baseExp": 255
+    "baseExp": 255,
+    "fullyEvolved": true
   },
   {
     "number": 859,
@@ -5163,43 +5614,50 @@
     "number": 861,
     "name": "Grimmsnarl",
     "bst": 510,
-    "baseExp": 255
+    "baseExp": 255,
+    "fullyEvolved": true
   },
   {
     "number": 862,
     "name": "Obstagoon",
     "bst": 520,
-    "baseExp": 260
+    "baseExp": 260,
+    "fullyEvolved": true
   },
   {
     "number": 863,
     "name": "Perrserker",
     "bst": 440,
-    "baseExp": 154
+    "baseExp": 154,
+    "fullyEvolved": true
   },
   {
     "number": 864,
     "name": "Cursola",
     "bst": 510,
-    "baseExp": 179
+    "baseExp": 179,
+    "fullyEvolved": true
   },
   {
     "number": 865,
     "name": "Sirfetch'd",
     "bst": 507,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 866,
     "name": "Mr. Rime",
     "bst": 520,
-    "baseExp": 182
+    "baseExp": 182,
+    "fullyEvolved": true
   },
   {
     "number": 867,
     "name": "Runerigus",
     "bst": 483,
-    "baseExp": 169
+    "baseExp": 169,
+    "fullyEvolved": true
   },
   {
     "number": 868,
@@ -5211,19 +5669,22 @@
     "number": 869,
     "name": "Alcremie",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 870,
     "name": "Falinks",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 871,
     "name": "Pincurchin",
     "bst": 435,
-    "baseExp": 152
+    "baseExp": 152,
+    "fullyEvolved": true
   },
   {
     "number": 872,
@@ -5235,31 +5696,36 @@
     "number": 873,
     "name": "Frosmoth",
     "bst": 475,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 874,
     "name": "Stonjourner",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 875,
     "name": "Eiscue",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 876,
     "name": "Indeedee",
     "bst": 475,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 877,
     "name": "Morpeko",
     "bst": 436,
-    "baseExp": 153
+    "baseExp": 153,
+    "fullyEvolved": true
   },
   {
     "number": 878,
@@ -5271,31 +5737,36 @@
     "number": 879,
     "name": "Copperajah",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 880,
     "name": "Dracozolt",
     "bst": 505,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 881,
     "name": "Arctozolt",
     "bst": 505,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 882,
     "name": "Dracovish",
     "bst": 505,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 883,
     "name": "Arctovish",
     "bst": 505,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 884,
@@ -5319,25 +5790,29 @@
     "number": 887,
     "name": "Dragapult",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 888,
     "name": "Zacian",
     "bst": 660,
-    "baseExp": 335
+    "baseExp": 335,
+    "fullyEvolved": true
   },
   {
     "number": 889,
     "name": "Zamazenta",
     "bst": 660,
-    "baseExp": 335
+    "baseExp": 335,
+    "fullyEvolved": true
   },
   {
     "number": 890,
     "name": "Eternatus",
     "bst": 690,
-    "baseExp": 345
+    "baseExp": 345,
+    "fullyEvolved": true
   },
   {
     "number": 891,
@@ -5349,85 +5824,99 @@
     "number": 892,
     "name": "Urshifu",
     "bst": 550,
-    "baseExp": 275
+    "baseExp": 275,
+    "fullyEvolved": true
   },
   {
     "number": 893,
     "name": "Zarude",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 894,
     "name": "Regieleki",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 895,
     "name": "Regidrago",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 896,
     "name": "Glastrier",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 897,
     "name": "Spectrier",
     "bst": 580,
-    "baseExp": 290
+    "baseExp": 290,
+    "fullyEvolved": true
   },
   {
     "number": 898,
     "name": "Calyrex",
     "bst": 500,
-    "baseExp": 250
+    "baseExp": 250,
+    "fullyEvolved": true
   },
   {
     "number": 899,
     "name": "Wyrdeer",
     "bst": 525,
-    "baseExp": 263
+    "baseExp": 263,
+    "fullyEvolved": true
   },
   {
     "number": 900,
     "name": "Kleavor",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 901,
     "name": "Ursaluna",
     "bst": 550,
-    "baseExp": 275
+    "baseExp": 275,
+    "fullyEvolved": true
   },
   {
     "number": 902,
     "name": "Basculegion",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 903,
     "name": "Sneasler",
     "bst": 510,
-    "baseExp": 102
+    "baseExp": 102,
+    "fullyEvolved": true
   },
   {
     "number": 904,
     "name": "Overqwil",
     "bst": 510,
-    "baseExp": 179
+    "baseExp": 179,
+    "fullyEvolved": true
   },
   {
     "number": 905,
     "name": "Enamorus",
     "bst": 580,
-    "baseExp": 116
+    "baseExp": 116,
+    "fullyEvolved": true
   },
   {
     "number": 906,
@@ -5445,7 +5934,8 @@
     "number": 908,
     "name": "Meowscarada",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 909,
@@ -5463,7 +5953,8 @@
     "number": 911,
     "name": "Skeledirge",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 912,
@@ -5481,7 +5972,8 @@
     "number": 914,
     "name": "Quaquaval",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 915,
@@ -5493,7 +5985,8 @@
     "number": 916,
     "name": "Oinkologne",
     "bst": 489,
-    "baseExp": 171
+    "baseExp": 171,
+    "fullyEvolved": true
   },
   {
     "number": 917,
@@ -5505,7 +5998,8 @@
     "number": 918,
     "name": "Spidops",
     "bst": 404,
-    "baseExp": 141
+    "baseExp": 141,
+    "fullyEvolved": true
   },
   {
     "number": 919,
@@ -5517,7 +6011,8 @@
     "number": 920,
     "name": "Lokix",
     "bst": 450,
-    "baseExp": 158
+    "baseExp": 158,
+    "fullyEvolved": true
   },
   {
     "number": 921,
@@ -5535,7 +6030,8 @@
     "number": 923,
     "name": "Pawmot",
     "bst": 490,
-    "baseExp": 245
+    "baseExp": 245,
+    "fullyEvolved": true
   },
   {
     "number": 924,
@@ -5547,7 +6043,8 @@
     "number": 925,
     "name": "Maushold",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 926,
@@ -5559,7 +6056,8 @@
     "number": 927,
     "name": "Dachsbun",
     "bst": 477,
-    "baseExp": 167
+    "baseExp": 167,
+    "fullyEvolved": true
   },
   {
     "number": 928,
@@ -5577,13 +6075,15 @@
     "number": 930,
     "name": "Arboliva",
     "bst": 510,
-    "baseExp": 255
+    "baseExp": 255,
+    "fullyEvolved": true
   },
   {
     "number": 931,
     "name": "Squawkabilly",
     "bst": 417,
-    "baseExp": 146
+    "baseExp": 146,
+    "fullyEvolved": true
   },
   {
     "number": 932,
@@ -5601,7 +6101,8 @@
     "number": 934,
     "name": "Garganacl",
     "bst": 500,
-    "baseExp": 250
+    "baseExp": 250,
+    "fullyEvolved": true
   },
   {
     "number": 935,
@@ -5613,13 +6114,15 @@
     "number": 936,
     "name": "Armarouge",
     "bst": 525,
-    "baseExp": 263
+    "baseExp": 263,
+    "fullyEvolved": true
   },
   {
     "number": 937,
     "name": "Ceruledge",
     "bst": 525,
-    "baseExp": 263
+    "baseExp": 263,
+    "fullyEvolved": true
   },
   {
     "number": 938,
@@ -5631,7 +6134,8 @@
     "number": 939,
     "name": "Bellibolt",
     "bst": 495,
-    "baseExp": 173
+    "baseExp": 173,
+    "fullyEvolved": true
   },
   {
     "number": 940,
@@ -5643,7 +6147,8 @@
     "number": 941,
     "name": "Kilowattrel",
     "bst": 490,
-    "baseExp": 172
+    "baseExp": 172,
+    "fullyEvolved": true
   },
   {
     "number": 942,
@@ -5655,7 +6160,8 @@
     "number": 943,
     "name": "Mabosstiff",
     "bst": 505,
-    "baseExp": 177
+    "baseExp": 177,
+    "fullyEvolved": true
   },
   {
     "number": 944,
@@ -5667,7 +6173,8 @@
     "number": 945,
     "name": "Grafaiai",
     "bst": 485,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 946,
@@ -5679,7 +6186,8 @@
     "number": 947,
     "name": "Brambleghast",
     "bst": 480,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 948,
@@ -5691,13 +6199,15 @@
     "number": 949,
     "name": "Toedscruel",
     "bst": 515,
-    "baseExp": 180
+    "baseExp": 180,
+    "fullyEvolved": true
   },
   {
     "number": 950,
     "name": "Klawf",
     "bst": 450,
-    "baseExp": 158
+    "baseExp": 158,
+    "fullyEvolved": true
   },
   {
     "number": 951,
@@ -5709,7 +6219,8 @@
     "number": 952,
     "name": "Scovillain",
     "bst": 486,
-    "baseExp": 170
+    "baseExp": 170,
+    "fullyEvolved": true
   },
   {
     "number": 953,
@@ -5721,7 +6232,8 @@
     "number": 954,
     "name": "Rabsca",
     "bst": 470,
-    "baseExp": 165
+    "baseExp": 165,
+    "fullyEvolved": true
   },
   {
     "number": 955,
@@ -5733,7 +6245,8 @@
     "number": 956,
     "name": "Espathra",
     "bst": 481,
-    "baseExp": 168
+    "baseExp": 168,
+    "fullyEvolved": true
   },
   {
     "number": 957,
@@ -5751,7 +6264,8 @@
     "number": 959,
     "name": "Tinkaton",
     "bst": 506,
-    "baseExp": 253
+    "baseExp": 253,
+    "fullyEvolved": true
   },
   {
     "number": 960,
@@ -5763,13 +6277,15 @@
     "number": 961,
     "name": "Wugtrio",
     "bst": 425,
-    "baseExp": 149
+    "baseExp": 149,
+    "fullyEvolved": true
   },
   {
     "number": 962,
     "name": "Bombirdier",
     "bst": 485,
-    "baseExp": 243
+    "baseExp": 243,
+    "fullyEvolved": true
   },
   {
     "number": 963,
@@ -5781,7 +6297,8 @@
     "number": 964,
     "name": "Palafin",
     "bst": 457,
-    "baseExp": 160
+    "baseExp": 160,
+    "fullyEvolved": true
   },
   {
     "number": 965,
@@ -5793,19 +6310,22 @@
     "number": 966,
     "name": "Revavroom",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 967,
     "name": "Cyclizar",
     "bst": 501,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 968,
     "name": "Orthworm",
     "bst": 480,
-    "baseExp": 240
+    "baseExp": 240,
+    "fullyEvolved": true
   },
   {
     "number": 969,
@@ -5817,7 +6337,8 @@
     "number": 970,
     "name": "Glimmora",
     "bst": 525,
-    "baseExp": 184
+    "baseExp": 184,
+    "fullyEvolved": true
   },
   {
     "number": 971,
@@ -5829,13 +6350,15 @@
     "number": 972,
     "name": "Houndstone",
     "bst": 488,
-    "baseExp": 171
+    "baseExp": 171,
+    "fullyEvolved": true
   },
   {
     "number": 973,
     "name": "Flamigo",
     "bst": 500,
-    "baseExp": 175
+    "baseExp": 175,
+    "fullyEvolved": true
   },
   {
     "number": 974,
@@ -5847,127 +6370,148 @@
     "number": 975,
     "name": "Cetitan",
     "bst": 521,
-    "baseExp": 182
+    "baseExp": 182,
+    "fullyEvolved": true
   },
   {
     "number": 976,
     "name": "Veluza",
     "bst": 478,
-    "baseExp": 167
+    "baseExp": 167,
+    "fullyEvolved": true
   },
   {
     "number": 977,
     "name": "Dondozo",
     "bst": 530,
-    "baseExp": 265
+    "baseExp": 265,
+    "fullyEvolved": true
   },
   {
     "number": 978,
     "name": "Tatsugiri",
     "bst": 475,
-    "baseExp": 166
+    "baseExp": 166,
+    "fullyEvolved": true
   },
   {
     "number": 979,
     "name": "Annihilape",
     "bst": 535,
-    "baseExp": 268
+    "baseExp": 268,
+    "fullyEvolved": true
   },
   {
     "number": 980,
     "name": "Clodsire",
     "bst": 430,
-    "baseExp": 151
+    "baseExp": 151,
+    "fullyEvolved": true
   },
   {
     "number": 981,
     "name": "Farigiraf",
     "bst": 520,
-    "baseExp": 260
+    "baseExp": 260,
+    "fullyEvolved": true
   },
   {
     "number": 982,
     "name": "Dudunsparce",
     "bst": 520,
-    "baseExp": 182
+    "baseExp": 182,
+    "fullyEvolved": true
   },
   {
     "number": 983,
     "name": "Kingambit",
     "bst": 550,
-    "baseExp": 275
+    "baseExp": 275,
+    "fullyEvolved": true
   },
   {
     "number": 984,
     "name": "Great Tusk",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 985,
     "name": "Scream Tail",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 986,
     "name": "Brute Bonnet",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 987,
     "name": "Flutter Mane",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 988,
     "name": "Slither Wing",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 989,
     "name": "Sandy Shocks",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 990,
     "name": "Iron Treads",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 991,
     "name": "Iron Bundle",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 992,
     "name": "Iron Hands",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 993,
     "name": "Iron Jugulis",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 994,
     "name": "Iron Moth",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 995,
     "name": "Iron Thorns",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 996,
@@ -5985,7 +6529,8 @@
     "number": 998,
     "name": "Baxcalibur",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 999,
@@ -5997,67 +6542,78 @@
     "number": 1000,
     "name": "Gholdengo",
     "bst": 550,
-    "baseExp": 275
+    "baseExp": 275,
+    "fullyEvolved": true
   },
   {
     "number": 1001,
     "name": "Wo-Chien",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 1002,
     "name": "Chien-Pao",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 1003,
     "name": "Ting-Lu",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 1004,
     "name": "Chi-Yu",
     "bst": 570,
-    "baseExp": 285
+    "baseExp": 285,
+    "fullyEvolved": true
   },
   {
     "number": 1005,
     "name": "Roaring Moon",
     "bst": 590,
-    "baseExp": 295
+    "baseExp": 295,
+    "fullyEvolved": true
   },
   {
     "number": 1006,
     "name": "Iron Valiant",
     "bst": 590,
-    "baseExp": 295
+    "baseExp": 295,
+    "fullyEvolved": true
   },
   {
     "number": 1007,
     "name": "Koraidon",
     "bst": 670,
-    "baseExp": 335
+    "baseExp": 335,
+    "fullyEvolved": true
   },
   {
     "number": 1008,
     "name": "Miraidon",
     "bst": 670,
-    "baseExp": 335
+    "baseExp": 335,
+    "fullyEvolved": true
   },
   {
     "number": 1009,
     "name": "Walking Wake",
     "bst": 590,
-    "baseExp": 295
+    "baseExp": 295,
+    "fullyEvolved": true
   },
   {
     "number": 1010,
     "name": "Iron Leaves",
     "bst": 590,
-    "baseExp": 295
+    "baseExp": 295,
+    "fullyEvolved": true
   },
   {
     "number": 1011,
@@ -6075,78 +6631,91 @@
     "number": 1013,
     "name": "Sinistcha",
     "bst": 508,
-    "baseExp": 178
+    "baseExp": 178,
+    "fullyEvolved": true
   },
   {
     "number": 1014,
     "name": "Okidogi",
     "bst": 555,
-    "baseExp": 276
+    "baseExp": 276,
+    "fullyEvolved": true
   },
   {
     "number": 1015,
     "name": "Munkidori",
     "bst": 555,
-    "baseExp": 276
+    "baseExp": 276,
+    "fullyEvolved": true
   },
   {
     "number": 1016,
     "name": "Fezandipiti",
     "bst": 555,
-    "baseExp": 276
+    "baseExp": 276,
+    "fullyEvolved": true
   },
   {
     "number": 1017,
     "name": "Ogerpon",
     "bst": 550,
-    "baseExp": 275
+    "baseExp": 275,
+    "fullyEvolved": true
   },
   {
     "number": 1018,
     "name": "Archaludon",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   },
   {
     "number": 1019,
     "name": "Hydrapple",
     "bst": 540,
-    "baseExp": 270
+    "baseExp": 270,
+    "fullyEvolved": true
   },
   {
     "number": 1020,
     "name": "Gouging Fire",
     "bst": 590,
-    "baseExp": 295
+    "baseExp": 295,
+    "fullyEvolved": true
   },
   {
     "number": 1021,
     "name": "Raging Bolt",
     "bst": 590,
-    "baseExp": 295
+    "baseExp": 295,
+    "fullyEvolved": true
   },
   {
     "number": 1022,
     "name": "Iron Boulder",
     "bst": 590,
-    "baseExp": 295
+    "baseExp": 295,
+    "fullyEvolved": true
   },
   {
     "number": 1023,
     "name": "Iron Crown",
     "bst": 590,
-    "baseExp": 295
+    "baseExp": 295,
+    "fullyEvolved": true
   },
   {
     "number": 1024,
     "name": "Terapagos",
     "bst": 450,
-    "baseExp": 90
+    "baseExp": 90,
+    "fullyEvolved": true
   },
   {
     "number": 1025,
     "name": "Pecharunt",
     "bst": 600,
-    "baseExp": 300
+    "baseExp": 300,
+    "fullyEvolved": true
   }
 ]

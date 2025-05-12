@@ -1,5 +1,5 @@
 import {RangeData, GrowthRates, MonFilter, PokeData, SplitData, MedianData} from "../types";
-import {beasts, gens, highestBST, legends, lowestBST, paradox} from "../constants";
+import {beasts, gens, highestBST, legends, lowestBST, paradox, starters} from "../constants";
 
 export const getCurrentTeamSize = (gym: number, gymAces: number, teamSize: number) => {
     return gym >= gymAces ? teamSize : gym <= 0 ? 1 : Math.ceil((gym / gymAces) * teamSize);
@@ -20,10 +20,6 @@ export const getXPYield = (level: number, bxp: number) => {
 
 export const getSimulatedBaseExp = (bst: number) => {
     return 0.000514205 * Math.pow(bst, 2.07129);
-}
-
-export const getFinalTrainer = (champion: boolean, e4Aces: number[]) => {
-    return champion ? e4Aces[e4Aces.length - 1] : e4Aces[0];
 }
 
 export const getFinalLevel = (finalTrainer: number, teamStrength: number) => {
@@ -89,6 +85,7 @@ export const filterMons = (pokemon: PokeData[], monFilter: MonFilter) => {
             if (monFilter.noLegends) filtered = legends;
             if (monFilter.noBeasts) filtered = [...filtered, ...beasts];
             if (monFilter.noParadox) filtered = [...filtered, ...paradox];
+            if (monFilter.noStarters) filtered = [...filtered, ...starters];
             let included: number[] = [];
             const gensFilter = monFilter.gens ? monFilter.gens : [1,2,3,4,5,6,7,8,9];
             gensFilter.forEach(gen => {
@@ -112,7 +109,7 @@ export const filterMons = (pokemon: PokeData[], monFilter: MonFilter) => {
         return filteredMons;
 }
 
-export const generateMons = (filteredMons: PokeData[], splits: SplitData[]) => {
+export const generateMons = (filteredMons: PokeData[], splits: SplitData[], fullyEvolvedLevel?: number) => {
     const selectedMons: PokeData[][] = [];
     splits.forEach((s) => {
         const pool = filteredMons.filter(p => p.bst > s.minBST && p.bst < s.maxBST);
@@ -213,4 +210,11 @@ export const getLevelRangeData = (aces: number[], minLevelRatio: number, maxLeve
         rangeData.push({ x, y: [i === 0 ? minLevel : aces[i - 1] * minLevelRatio, y * maxLevelRatio] });
     })
     return {rangeData, medianData};
+}
+
+export const getMean = (list: number[]) => {
+    if (list.length === 0) return 0;
+    let sum = 0;
+    list.forEach(x => sum += x);
+    return sum / list.length;
 }

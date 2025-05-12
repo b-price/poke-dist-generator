@@ -18,14 +18,17 @@ export interface PokeData {
     bst: number;
     baseExp: number;
     level?: number;
+    fullyEvolved?: boolean;
 }
 
 export interface MonFilter {
     noLegends?: boolean;
     noBeasts?: boolean;
     noParadox?: boolean;
+    noStarters?: boolean;
     gens?: number[];
     numbers?: number[];
+    fullyEvolvedLevel?: number;
 }
 
 export interface PokeDataCSV {
@@ -52,4 +55,9 @@ export interface MedianData {
 export interface ChartData {
     rangeData: RangeData[];
     medianData: MedianData[];
+}
+
+export interface FinalAce {
+    level: number;
+    position: string;
 }

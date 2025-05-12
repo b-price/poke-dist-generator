@@ -15,6 +15,19 @@ export const bstMinFactor = 0.8;
 // introduces more variance in the BST range for each split
 export const bstMaxFactor = 1.2;
 
+// dex numbers of starter pokemon
+export const starters = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9,
+    152, 153, 154, 155, 156, 157, 158, 159, 160,
+    252, 253, 254, 255, 256, 257, 258, 259, 260,
+    387, 388, 389, 390, 391, 392, 393, 394, 395,
+    495, 496, 497, 498, 499, 500, 501, 502, 503,
+    650, 651, 652, 653, 654, 655, 656, 657, 658,
+    722, 723, 724, 725, 726, 727, 728, 729, 730,
+    810, 811, 812, 813, 814, 815, 816, 817, 818,
+    906, 907, 908, 909, 910, 911, 912, 913, 914
+];
+
 // dex numbers of legendary pokemon (also mythical)
 export const legends = [
     144, 145, 146, 150, 151,
@@ -35,7 +48,7 @@ export const beasts = [794, 795, 796, 797, 798, 799, 803, 804, 805, 806, 807];
 export const paradox = [984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 1005, 1006, 1009, 1010, 1020, 1021, 1022, 1023];
 
 // the last pokemon in each generation
-export const gens = [0, 151, 251, 386, 493, 649, 721, 905, 1025];
+export const gens = [0, 151, 251, 386, 493, 649, 721, 810, 905, 1025];
 
 // the growth rate used for experience calculation. currently Medium Fast, the most common group
 export const expGrowthFunction: GrowthRates = 'mediumFast';

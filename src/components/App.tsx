@@ -13,19 +13,20 @@ import {
     chartResolution,
     expGrowthFunction,
     maxPreGym,
-    minPostGym,
+    minPostGym, pokemonText,
     title
 } from "../constants.ts";
-import {ChartData, SplitData} from "../types.ts";
+import {ChartData, FinalAce, SplitData} from "../types.ts";
 import {
     getCurrentBST,
     getExpAtAces,
     getFinalLevel,
-    getFinalTrainer, getBSTRangeData,
+    getBSTRangeData,
     getSimulatedBaseExp,
-    getTotalExp, getXPYield, getLevelRangeData
+    getTotalExp, getXPYield, getLevelRangeData, getMean
 } from "../utils/calc.ts";
 import RangeChart from "./RangeChart.tsx";
+import {TextTooltip} from "./TextTooltip.tsx";
 
 const defaultState = {
     gymAces: [10,15,20,25,30,35,40,45],
@@ -36,7 +37,8 @@ const defaultState = {
     firstAce: 5,
     trainerPercent: 100,
     bstDataPoints: getBSTRangeData([245, 565, -1150, 900, 0], chartResolution, bstMinFactor, bstMaxFactor),
-    levelDataPoints: getLevelRangeData([10,15,20,25,30,35,40,45,50], minPostGym, maxPreGym, 5)
+    levelDataPoints: getLevelRangeData([10,15,20,25,30,35,40,45,50], minPostGym, maxPreGym, 5),
+    finalAce: {level: 50, position: "first"}
 }
 
 function App() {
@@ -47,7 +49,6 @@ function App() {
     const [teamStrength, setTeamStrength] = useState<number>(defaultState.teamStrength);
     const [firstAce, setFirstAce] = useState<number>(defaultState.firstAce);
     const [trainerPercent, setTrainerPercent] = useState<number>(defaultState.trainerPercent);
-    const [useChampion, setUseChampion] = useState<boolean>(false);
     const [errorState, setErrorState] = useState<boolean>(false);
     const [errors, setErrors] = useState<string[]>(['']);
     const [showOutput, setShowOutput] = useState<boolean>(false);
@@ -58,13 +59,13 @@ function App() {
     const [dark, setDark] = useState<boolean>(false);
     const [bstChartData, setBstChartData] = useState<ChartData>(defaultState.bstDataPoints);
     const [levelChartData, setLevelChartData] = useState<ChartData>(defaultState.levelDataPoints);
+    const [finalAce, setFinalAce] = useState<FinalAce>(defaultState.finalAce);
 
     const bstLabels = ['', 'x', 'x²', 'x³', 'x⁴'];
 
     useEffect(() => {
-        const leagueAce = useChampion ? e4Aces[e4Aces.length - 1] : e4Aces[0];
-        setLevelChartData(getLevelRangeData([...gymAces, leagueAce], minPostGym, maxPreGym, firstAce));
-    }, [gymAces, e4Aces, useChampion, firstAce]);
+        setLevelChartData(getLevelRangeData([...gymAces, finalAce.level], minPostGym, maxPreGym, firstAce));
+    }, [gymAces, e4Aces, finalAce, firstAce]);
 
     useEffect(() => {
         setBstChartData(getBSTRangeData(bstCoefficients, chartResolution, bstMinFactor, bstMaxFactor));
@@ -105,6 +106,29 @@ function App() {
         if (!isNaN(idx)) {
             setGymAces(lCurves[idx].gyms);
             setE4Aces(lCurves[idx].league);
+            switch (finalAce.position) {
+                case "champion":
+                    setFinalAce({level: lCurves[idx].league[lCurves[idx].league.length - 1], position: "champion"});
+                    break;
+                case "average":
+                    setFinalAce({level: getMean(lCurves[idx].league), position: "average"});
+                    break;
+                default:
+                    setFinalAce({level: lCurves[idx].league[0], position: "first"});
+            }
+        }
+    }
+
+    const onFinalTrainerChange = (selection: string) => {
+        switch (selection) {
+            case "champion":
+                setFinalAce({level: e4Aces[e4Aces.length - 1], position: "champion"});
+                break;
+            case "average":
+                setFinalAce({level: getMean(e4Aces), position: "average"});
+                break;
+            default:
+                setFinalAce({level: e4Aces[0], position: "first"});
         }
     }
 
@@ -126,7 +150,7 @@ function App() {
         e4Aces.forEach((level, i) => {
             if (isNaN(level) || level < 1 || level > 100) {
                 isError = true;
-                messages.push(`E4 ace #${i + 1} invalid.`);
+                messages.push(`League ace #${i + 1} invalid.`);
             }
         })
         bstCoefficients.forEach((b, i) => {
@@ -164,11 +188,10 @@ function App() {
     const onSubmit = () => {
         const isInvalid = validateInput();
         if (!isInvalid) {
-            const finalTrainer = getFinalTrainer(useChampion, e4Aces);
-            const adjFinalLevel = getFinalLevel(finalTrainer, teamStrength);
+            const adjFinalLevel = getFinalLevel(finalAce.level, teamStrength);
             setMaxLevel(Math.round(adjFinalLevel));
             setTotalExp(getTotalExp(teamSize, adjFinalLevel, trainerPercent, expGrowthFunction));
-            const aces = [...gymAces, finalTrainer];
+            const aces = [...gymAces, finalAce.level];
             const xpAtAces = getExpAtAces(aces, teamStrength, trainerPercent, teamSize, gymAces.length, expGrowthFunction);
 
             const splitInfo: SplitData[] = [];
@@ -212,8 +235,8 @@ function App() {
       <Container className="mx-4 my-5">
 
           <Row className="mb-3 align-items-center justify-content-between">
-              <Col><h2>{title}</h2></Col>
-              <Col className="text-end">
+              <Col ><h2>{title}</h2></Col>
+              <Col className="text-lg-end text-center">
                     {dark ? (
                         <h3><FontAwesomeIcon cursor="pointer" icon={faSun} onClick={() => switchTheme(false)} /></h3>
               ) : (
@@ -223,7 +246,12 @@ function App() {
           </Row>
           <Row className="mb-3 align-items-center">
               <Col xs="auto">
-                  <Form.Label className="mb-0">Level Curve</Form.Label>
+                  <TextTooltip
+                      id="ttLevelCurve"
+                      text="Your game's level curve, determined by the levels of each gym leader's ace."
+                  >
+                      <Form.Label className="mb-0">Level Curve</Form.Label>
+                  </TextTooltip>
               </Col>
               <Col xs="auto">
                   <Form.Select onChange={(e) => onLevelPresetChange(parseFloat(e.target.value))}>
@@ -236,14 +264,20 @@ function App() {
           </Row>
 
           <Row>
-              <Form.Label>Gym Leader Ace Levels</Form.Label>
+              <Form.Label>
+                  <TextTooltip
+                      id="ttGymLeaders"
+                      text={`The highest-level ${pokemonText} on each gym leader's team. All are taken into account in calculations.`}>
+                      <span>Gym Leader Ace Levels</span>
+                  </TextTooltip>
+              </Form.Label>
           </Row>
           <Form.Group as={Row} className="mb-3 align-items-center" controlId="gymAces">
               {gymAces.map((a, i) => (
                   <Col xs="auto" lg={1} key={i}>
                       <FloatingLabel
                           controlId={`levelCurve${i}`}
-                          label={`Ace #${i+1}`}
+                          label={i + 1}
                           className="mb-3"
                       >
                           <Form.Control
@@ -271,15 +305,32 @@ function App() {
               </Col>
           </Form.Group>
 
-          <Row>
-              <Form.Label>League Ace Levels</Form.Label>
+          <Row className="align-items-center mb-2">
+              <Col xs="auto">
+                  <Form.Label>
+                      <TextTooltip
+                          id="ttLeagueAces"
+                          text={`The highest-level ${pokemonText} on each league member's team. Choose to use the first 
+                      member, champion, or an average of all to use as the final trainer in calculations.`}>
+                          <span>League Ace Levels</span>
+                      </TextTooltip>
+                  </Form.Label>
+              </Col>
+              <Col xs="auto">
+                  <Form.Select id="finalTrainerSelect" onChange={(e) => onFinalTrainerChange(e.target.value)}>
+                      <option value="default">Select Final Trainer...</option>
+                      <option value="first">First League Member</option>
+                      <option value="champion">Champion</option>
+                      <option value="average">Average of League Aces</option>
+                  </Form.Select>
+              </Col>
           </Row>
           <Form.Group as={Row} className="mb-3 align-items-center" controlId="e4Aces">
               {e4Aces.map((a, i) => (
                       <Col xs="auto" lg={1} key={i}>
                           <FloatingLabel
                               controlId={`levelCurve${i}`}
-                              label={`Ace #${i+1}`}
+                              label={i === e4Aces.length - 1 ? "Champion" : i + 1}
                               className="mb-3"
                           >
                               <Form.Control
@@ -310,7 +361,14 @@ function App() {
 
           <Row className="mb-3 align-items-center">
               <Col xs="auto">
-                  <Form.Label className="mb-0">BST Curve</Form.Label>
+                  <Form.Label className="mb-0">
+                      <TextTooltip
+                          id="ttBSTCurve"
+                          text={`Function used to determine the Base Stat Total of the generated ${pokemonText} at any given 
+                          point in the game, represented as the game completion percentage x / 1.`}>
+                          <span>BST Curve</span>
+                      </TextTooltip>
+                  </Form.Label>
               </Col>
               <Col xs="auto">
                   <Form.Select onChange={(e) => onBSTPresetChange(parseFloat(e.target.value))}>
@@ -354,34 +412,47 @@ function App() {
           />
 
           <Row className="mb-3">
-              <Form.Group as={Col} xs="auto" controlId="teamSize">
-                  <Form.Label>Team Size</Form.Label>
+              <Form.Group as={Col} xs="auto" controlId="teamSize" className="mb-3">
+                  <Form.Label>
+                      <TextTooltip
+                          id="ttTeamSize"
+                          text={`The amount of battling ${pokemonText} the player should be expected to raise throughout the game.`}>
+                          <span>Team Size</span>
+                      </TextTooltip>
+                  </Form.Label>
                   <Form.Control type="number" value={teamSize} onChange={(e) => setTeamSize(parseFloat(e.target.value))} />
               </Form.Group>
 
-              <Form.Group as={Col} xs="auto" controlId="teamStrength">
-                  <Form.Label>Team Strength Relative to Aces (%)</Form.Label>
+              <Form.Group as={Col} xs="auto" controlId="teamStrength" className="mb-3">
+                  <Form.Label>
+                      <TextTooltip
+                          id="ttTeamStrength"
+                          text={`The percentage of the Gym/League ace's level the player's ${pokemonText} are expected to be when battling them. Out of 100.`}>
+                          <span>Team Strength Relative to Aces (%)</span>
+                      </TextTooltip>
+                  </Form.Label>
                   <Form.Control value={teamStrength} onChange={(e) => setTeamStrength(parseFloat(e.target.value))} />
               </Form.Group>
-              <Form.Group as={Col} xs="auto" controlId="trainerPercent">
-                  <Form.Label>Expected Trainers to Fight (%)</Form.Label>
+              <Form.Group as={Col} xs="auto" controlId="trainerPercent" className="mb-3">
+                  <Form.Label>
+                      <TextTooltip
+                          id="ttTrainerPercent"
+                          text={`The percentage of trainers throughout the game the player is expected to battle. Out of 100.`}>
+                          <span>Expected Trainers to Fight (%)</span>
+                      </TextTooltip>
+                  </Form.Label>
                   <Form.Control value={trainerPercent} onChange={(e) => setTrainerPercent(parseFloat(e.target.value))} />
               </Form.Group>
-          </Row>
-
-          <Row className="mb-3 align-items-center">
               <Form.Group as={Col} xs="auto" controlId="startingLevel" className="mb-3">
-                  <Form.Label>First Battle Level</Form.Label>
+                  <Form.Label>
+                      <TextTooltip
+                          id="ttFirstAce"
+                          text={`The level of the first trainer in the game's ace ${pokemonText}.`}>
+                          <span>First Battle Level</span>
+                      </TextTooltip>
+                  </Form.Label>
                   <Form.Control type="number" value={firstAce} onChange={(e) => setFirstAce(parseFloat(e.target.value))} />
               </Form.Group>
-              <Col>
-                  <Form.Check
-                      type="switch"
-                      id="useChampion"
-                      label="Use Champion instead of First League Member"
-                      onChange={(e) => {setUseChampion(e.target.checked)}}
-                  />
-              </Col>
           </Row>
 
           <Button variant="primary" size="lg" onClick={onSubmit}>

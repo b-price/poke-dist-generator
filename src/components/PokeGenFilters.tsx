@@ -1,7 +1,9 @@
 import * as React from "react";
 import {useState} from "react";
-import {Button, Col, Container, Form, Row} from "react-bootstrap";
+import {Button, Col, Container, Form, InputGroup, Row} from "react-bootstrap";
 import {MonFilter} from "../types.ts";
+import {TextTooltip} from "./TextTooltip.tsx";
+import {pokemonText} from "../constants.ts";
 
 interface PokeGenFiltersProps {
     onSubmit: (filter?: MonFilter) => void;
@@ -16,8 +18,10 @@ export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setErro
     const [noLegends, setNoLegends] = useState<boolean>(false);
     const [noBeasts, setNoBeasts] = useState<boolean>(false);
     const [noParadox, setNoParadox] = useState<boolean>(false);
+    const [noStarters, setNoStarters] = useState<boolean>(false);
     const [selectedGens, setSelectedGens] = useState<boolean[]>(initGens);
     const [file, setFile] = useState<File | null>(null);
+    const [fullyEvolvedLevel, setFullyEvolvedLevel] = useState<number>(0);
 
     const changeGens = (checked: boolean, idx: number) => {
         setSelectedGens(selectedGens.map((v, i) => i === idx ? checked : v));
@@ -28,7 +32,9 @@ export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setErro
         setNoLegends(false);
         setNoBeasts(false);
         setNoParadox(false);
+        setNoStarters(false);
         setSelectedGens(initGens);
+        setFullyEvolvedLevel(0);
         setFile(null);
     }
 
@@ -51,7 +57,9 @@ export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setErro
                     noLegends,
                     noBeasts,
                     noParadox,
+                    noStarters,
                     gens: selectedGens.map((_, i) => i + 1).filter((_, j) => selectedGens[j]),
+                    fullyEvolvedLevel: fullyEvolvedLevel < 1 ? undefined : fullyEvolvedLevel,
                 }
                 if (list) filter.numbers = list;
                 initState();
@@ -78,7 +86,15 @@ export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setErro
             ) : (
                 <Form>
                     <Row className="mb-2"><h4>Filters</h4></Row>
-                    <Row className="align-items-center mb-3">
+                    <Row className="align-items-top mb-3">
+                        <Col>
+                            <Form.Check
+                                type="switch"
+                                id="startersSwitch"
+                                label="No Starters"
+                                onChange={(e) => {setNoStarters(e.target.checked)}}
+                            />
+                        </Col>
                         <Col>
                             <Form.Check
                                 type="switch"
@@ -128,7 +144,17 @@ export const PokeGenFilters: React.FC<PokeGenFiltersProps> = ({onSubmit, setErro
                         ) )}
                     </Row>
                     <Row className="mb-3">
-
+                        <TextTooltip id="ttFullyEvolved" text={`All ${pokemonText} above this level will be fully evolved. A value of 0 disables this.`}>
+                            <Form.Label>Force Fully-Evolved After</Form.Label>
+                        </TextTooltip>
+                        <InputGroup>
+                            <InputGroup.Text>Lv.</InputGroup.Text>
+                            <Form.Control
+                                type="number"
+                                value={fullyEvolvedLevel}
+                                onChange={(e) => setFullyEvolvedLevel(parseInt(e.target.value))}
+                            />
+                        </InputGroup>
                     </Row>
                     <Row className="mb-3">
                         <Form.Group>
